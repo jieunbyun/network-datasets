@@ -115,15 +115,6 @@ The ``fun_binary_graph`` module provides functions for evaluating performance of
    :undoc-members:
    :show-inheritance:
 
-Key Functions
-~~~~~~~~~~~~~
-
-``eval_global_conn_k(comps_state, G_base)``
-   Evaluate global vertex connectivity of a network under component failures.
-
-``eval_travel_time_to_nearest(comps_state, G_base, origin, destinations, ...)``
-   Evaluate travel time to the nearest destination under component failures.
-
 Example Usage
 ~~~~~~~~~~~~~
 

@@ -341,7 +341,6 @@ def update_registry(registry_path: Path, name: str, version: DatasetVersion, rel
 
 def generate_and_save(
     out_base: Path,
-    schema_dir: Path,
     config: GenConfig,
     update_registry_flag: bool = False,
     # Visualisation options:
@@ -349,6 +348,8 @@ def generate_and_save(
     graph_layout: str = "spring",
     graph_name: str = "graph.png",
     graph_kwargs: Optional[Dict] = None,
+    # Schema validation:
+    schema_dir: Optional[Path] = None,
 ) -> Path:
     """
     High-level: generate -> save -> validate -> registry update.
@@ -401,7 +402,10 @@ def generate_and_save(
         generator_params=params,
     )
 
-    validate(ds_root, schema_dir)
+    if isinstance(schema_dir, Path):
+        validate(ds_root, schema_dir)
+    elif schema_dir is not None:
+        raise Warning("schema_dir should be a Path or None. Skipping validation.")
 
     if draw_graph:
         data_dir = ds_root / "data"

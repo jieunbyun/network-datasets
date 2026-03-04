@@ -26,5 +26,26 @@
     "path": "datasets/generated-examples/v1",
     "summary": "Collection of synthetic example datasets generated with ndtools.network_generator. See generated/README.md and PROVENANCE.md for details.",
     "license": "CC-BY-4.0"
+  },
+  {
+    "name": "process-plant-toy",
+    "version": "1.0.0",
+    "path": "datasets/process_plants/toy/v1",
+    "summary": "A small toy process plant network.",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "name": "gas-supply-plant-benchmark",
+    "version": "1.0.0",
+    "path": "datasets/process_plants/gas_supply_plant/v1",
+    "summary": "A benchmark gas supply plant network.",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "name": "pressure-regularisation-plant-benchmark",
+    "version": "1.0.0",
+    "path": "datasets/process_plants/pressure_regularisation_plant/v1",
+    "summary": "A benchmark pressure regularisation plant network.",
+    "license": "CC-BY-4.0"
   }  
 ]

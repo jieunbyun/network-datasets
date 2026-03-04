@@ -1,34 +1,42 @@
 {
     "n1": {
         "x": 0,
-        "y": 1
+        "y": 1,
+        "population": 10
     },
     "n2": {
         "x": 1,
-        "y": 0
+        "y": 0,
+        "population": 20
     },
     "n3": {
         "x": 1,
-        "y": 1
+        "y": 1,
+        "population": 20
     },
     "n4": {
         "x": 1,
-        "y": 2
+        "y": 2,
+        "population": 20
     },
     "n5": {
         "x": 2,
-        "y": 0
+        "y": 0,
+        "population": 30
     },
     "n6": {
         "x": 2,
-        "y": 1
+        "y": 1,
+        "population": 30
     },
     "n7": {
         "x": 2,
-        "y": 2
+        "y": 2,
+        "population": 30
     },
     "n8": {
         "x": 3,
-        "y": 1
+        "y": 1,
+        "population": 10
     }
 }

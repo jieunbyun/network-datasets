@@ -52,7 +52,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#verify-installation">Verify Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#run-tests">Run Tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#development-installation">Development Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#environment-setup">Environment Setup</a></li>
 </ul>
@@ -62,7 +61,7 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">Available Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ndtools.html">ndtools Package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generating%20random%20networks.html">Random Network Generator (ndtools)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generating%20networks.html">Random Network Generator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="how%20to%20contribute.html">How to contribute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
@@ -121,7 +120,7 @@ pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </s
 </section>
 <section id="using-pip-regular-install">
 <h3>Using pip (Regular Install)<a class="headerlink" href="#using-pip-regular-install" title="Link to this heading"></a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>ndtools
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>ndtools-duco
 </pre></div>
 </div>
 </section>
@@ -132,22 +131,14 @@ pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </s
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import ndtools; print(ndtools.__version__)&quot;</span>
 </pre></div>
 </div>
-</section>
-<section id="run-tests">
-<h2>Run Tests<a class="headerlink" href="#run-tests" title="Link to this heading"></a></h2>
-<p>To verify everything is working correctly:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest<span class="w"> </span>-q
-</pre></div>
-</div>
+<p><strong>Note</strong> the name of the package for import is <code class="docutils literal notranslate"><span class="pre">ndtools</span></code>, while the pip package name is <code class="docutils literal notranslate"><span class="pre">ndtools-duco</span></code>.</p>
 </section>
 <section id="development-installation">
 <h2>Development Installation<a class="headerlink" href="#development-installation" title="Link to this heading"></a></h2>
 <p>For development work, you may want to install additional dependencies:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install with development dependencies</span>
-pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
-
-<span class="c1"># Or install additional packages manually</span>
-pip<span class="w"> </span>install<span class="w"> </span>pytest<span class="w"> </span>matplotlib<span class="w"> </span>jupyter
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install from the repo</span>
+<span class="nb">cd</span><span class="w"> </span>&lt;path-to-repo&gt;
+pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
 </pre></div>
 </div>
 <section id="environment-setup">

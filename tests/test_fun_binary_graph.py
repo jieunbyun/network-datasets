@@ -229,3 +229,169 @@ def test_eval_travel_time_to_nearest5():
 
     assert np.isclose(travel_time, 2*np.sqrt(2) + 1.0), f"Expected travel_time {2*np.sqrt(2) + 1.0}, got {travel_time}"
     assert sys_st == 2, f"Expected system state 2, got '{sys_st}'"
+
+def test_eval_population_accessibility1():
+    nodes, edges, probs = load_dataset_any("datasets/toynet_11edges/v1/data")
+    G_base = build_base_graph(nodes, edges)
+
+    comps_st = {eid: 1 for eid in edges}  # all components survive
+    destinations = ['n5', 'n7']
+
+    connected_ratio, sys_st, details = fun_binary_graph.eval_population_accessibility(
+        comps_st, G_base, destinations, avg_speed=1.0,
+        target_time_max=0.5, #  it shouldn't take longer than 0.5 hours more than original shortest time
+        length_attr="length",
+        target_pop_max=0.7, # at least 70% of population should reach destination within target time
+        population_attr="population"
+    )
+
+    assert np.isclose(connected_ratio, 1.0), f"Expected connected_ratio 1.0, got {connected_ratio}"
+    assert sys_st == 1, f"Expected system state 1, got '{sys_st}'"
+
+def test_eval_population_accessibility2():
+    nodes, edges, probs = load_dataset_any("datasets/toynet_11edges/v1/data")
+    G_base = build_base_graph(nodes, edges)
+
+    comps_st = {eid: 1 for eid in edges}  
+    comps_st['e03'] = 0  # failed components
+
+    destinations = ['n5', 'n7']
+
+    connected_ratio, sys_st, details = fun_binary_graph.eval_population_accessibility(
+        comps_st, G_base, destinations, avg_speed=1.0,
+        target_time_max=0.5, #  it shouldn't take longer than 0.5 hours more than original shortest time
+        length_attr="length",
+        target_pop_max=0.7, # at least 70% of population should reach destination within target time
+        population_attr="population"
+    )
+
+    assert np.isclose(connected_ratio, (110.0-10.0)/110.0), f"Expected connected_ratio {(110.0-10.0)/110.0}, got {connected_ratio}"
+    assert sys_st == 1, f"Expected system state 1, got '{sys_st}'"
+
+def test_eval_population_accessibility3():
+    nodes, edges, probs = load_dataset_any("datasets/toynet_11edges/v1/data")
+    G_base = build_base_graph(nodes, edges)
+
+    comps_st = {eid: 1 for eid in edges}  
+    comps_st['e05'], comps_st['e07'] = 0, 0  # failed components
+
+    destinations = ['n5', 'n7']
+
+    connected_ratio, sys_st, details = fun_binary_graph.eval_population_accessibility(
+        comps_st, G_base, destinations, avg_speed=1.0,
+        target_time_max=0.5, #  it shouldn't take longer than 0.5 hours more than original shortest time
+        target_pop_max=0.7, # at least 70% of population should reach destination within target time
+    )
+
+    expected = (110.0 - 10.0 - 20.0 - 20.0 - 20.0)/110.0 # disconnected: n1-n4, connected: n6, n8
+    assert np.isclose(connected_ratio, expected), f"Expected connected_ratio {expected}, got {connected_ratio}"
+    assert sys_st == 0, f"Expected system state 0, got '{sys_st}'"
+    
+    for n in ['n1', 'n2', 'n3', 'n4']:
+        assert details['node_details'][n]['within_threshold'] == False, f"Expected node {n} to be unreachable"
+    for n in ['n6', 'n8']:
+        assert details['node_details'][n]['within_threshold'] == True, f"Expected node {n} to be reachable"
+    for n in ['n5', 'n7']:
+        assert n not in details['node_details'], f"Expected destination node {n} to be skipped"
+
+def test_eval_population_accessibility4():
+    # multi-state system; rest remains the same as test_eval_population_accessibility3
+
+    nodes, edges, probs = load_dataset_any("datasets/toynet_11edges/v1/data")
+    G_base = build_base_graph(nodes, edges)
+
+    comps_st = {eid: 1 for eid in edges}  
+    comps_st['e05'], comps_st['e07'] = 0, 0  # failed components
+
+    destinations = ['n5', 'n7']
+
+    connected_ratio, sys_st, details = fun_binary_graph.eval_population_accessibility(
+        comps_st, G_base, destinations, avg_speed=1.0,
+        target_time_max=0.5, #  it shouldn't take longer than 0.5 hours more than original shortest time
+        target_pop_max=[0.3, 0.7], # system state 0: if less than 30% population reaches destination within target time
+        # state 1: if 30%<= <70% population reaches destination within target time; else state 2
+    )
+
+    expected = (110.0 - 10.0 - 20.0 - 20.0 - 20.0)/110.0 # disconnected: n1-n4, connected: n6, n8
+    assert np.isclose(connected_ratio, expected), f"Expected connected_ratio {expected}, got {connected_ratio}"
+    assert sys_st == 1, f"Expected system state 1, got '{sys_st}'"
+
+def test_eval_population_accessibility5():
+    # another check for multi-state systems; rest remains the same as test_eval_population_accessibility1
+    nodes, edges, probs = load_dataset_any("datasets/toynet_11edges/v1/data")
+    G_base = build_base_graph(nodes, edges)
+
+    comps_st = {eid: 1 for eid in edges}  # all components survive
+    destinations = ['n5', 'n7']
+
+    connected_ratio, sys_st, details = fun_binary_graph.eval_population_accessibility(
+        comps_st, G_base, destinations, avg_speed=1.0,
+        target_time_max=0.5, #  it shouldn't take longer than 0.5 hours more than original shortest time
+        length_attr="length",
+        target_pop_max=[0.7, 1.0], # at least 70% of population should reach destination within target time
+        population_attr="population"
+    )
+
+    assert np.isclose(connected_ratio, 1.0), f"Expected connected_ratio 1.0, got {connected_ratio}"
+    assert sys_st == 2, f"Expected system state 2, got '{sys_st}'"
+
+def test_eval_1od_connectivity1():
+    nodes, edges, probs = load_dataset_any("datasets/toynet_11edges/v1/data")
+    G_base = build_base_graph(nodes, edges)
+
+    comps_st = {eid: 1 for eid in edges}  # all components survive
+    origin = 'n1'
+    destinations = 'n8'
+
+    _, sys_st, info = fun_binary_graph.eval_1od_connectivity(
+        comps_st, G_base, origin, destinations) 
+
+    path_nodes_cands = [['n1', 'n2', 'n6', 'n8'],
+                        ['n1', 'n4', 'n6', 'n8'],
+                        ['n1', 'n4', 'n7', 'n8']]
+    path_eids_cands = [['e01', 'e05', 'e10'],
+                       ['e03', 'e06', 'e10'],
+                       ['e03', 'e07', 'e11']]
+
+    assert sys_st == 1, f"Expected system state 1, got '{sys_st}'"
+    assert info['path_nodes'] in path_nodes_cands, f"Got {info['path_nodes']}"
+    assert info['path_edge_ids'] in path_eids_cands, f"Got {info['path_edge_ids']}"
+
+def test_eval_1od_connectivity2():
+    nodes, edges, probs = load_dataset_any("datasets/toynet_11edges/v1/data")
+    G_base = build_base_graph(nodes, edges)
+
+    comps_st = {eid: 1 for eid in edges}  
+    comps_st['e03'] = 0  # failed components
+
+    origin = 'n1'
+    destinations = 'n8'
+
+    _, sys_st, info = fun_binary_graph.eval_1od_connectivity(
+        comps_st, G_base, origin, destinations
+    )
+
+    path_nodes_expected = ['n1', 'n2', 'n6', 'n8']
+    path_eids_expected = ['e01', 'e05', 'e10']
+
+    assert sys_st == 1, f"Expected system state 1, got '{sys_st}'"
+    assert info['path_nodes'] == path_nodes_expected, f"Expected path_nodes {path_nodes_expected}, got {info['path_nodes']}"
+    assert info['path_edge_ids'] == path_eids_expected, f"Expected path_edge_ids {path_eids_expected}, got {info['path_edge_ids']}"
+
+def test_eval_1od_connectivity3():
+    nodes, edges, probs = load_dataset_any("datasets/toynet_11edges/v1/data")
+    G_base = build_base_graph(nodes, edges)
+
+    comps_st = {eid: 1 for eid in edges}  
+    comps_st['e01'], comps_st['e02'], comps_st['e03'] = 0, 0, 0  # failed components
+
+    origin = 'n1'
+    destinations = 'n8'
+
+    _, sys_st, info = fun_binary_graph.eval_1od_connectivity(
+        comps_st, G_base, origin, destinations
+    )
+
+    assert sys_st == 0, f"Expected system state 1, got '{sys_st}'"
+    assert info['path_nodes'] == None, f"Expected path_nodes None, got {info['path_nodes']}"
+    assert info['path_edge_ids'] == None, f"Expected path_edge_ids None, got {info['path_edge_ids']}"

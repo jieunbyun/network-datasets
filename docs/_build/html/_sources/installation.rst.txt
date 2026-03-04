@@ -35,7 +35,7 @@ Using pip (Regular Install)
 
 .. code-block:: bash
 
-   pip install ndtools
+   pip install ndtools-duco
 
 Verify Installation
 -------------------
@@ -46,14 +46,7 @@ Check that the package is properly installed:
 
    python -c "import ndtools; print(ndtools.__version__)"
 
-Run Tests
----------
-
-To verify everything is working correctly:
-
-.. code-block:: bash
-
-   pytest -q
+**Note** the name of the package for import is ``ndtools``, while the pip package name is ``ndtools-duco``.
 
 Development Installation
 ------------------------
@@ -62,11 +55,9 @@ For development work, you may want to install additional dependencies:
 
 .. code-block:: bash
 
-   # Install with development dependencies
-   pip install -e ".[dev]"
-
-   # Or install additional packages manually
-   pip install pytest matplotlib jupyter
+   # Install from the repo
+   cd <path-to-repo>
+   pip install -e .
 
 Environment Setup
 ~~~~~~~~~~~~~~~~~

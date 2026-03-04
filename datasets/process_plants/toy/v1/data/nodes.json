@@ -1,0 +1,100 @@
+{
+  "n1": {
+    "x": 0.0,
+    "y": 0.0,
+    "station_stage": 1,
+    "capacity": 0.5,
+    "comp_id": "x1"
+  },
+  "n2": {
+    "x": 0.0,
+    "y": 2.0,
+    "station_stage": 1,
+    "capacity": 0.5,
+    "comp_id": "x2"
+  },
+  "n3": {
+    "x": 0.0,
+    "y": 1.0,
+    "station_stage": null,
+    "capacity": null,
+    "comp_id": null
+  },
+  "n4": {
+    "x": -1.5,
+    "y": 1.0,
+    "station_stage": null,
+    "capacity": null,
+    "comp_id": null
+  },
+  "n5": {
+    "x": -1.5,
+    "y": 0.0,
+    "station_stage": 2,
+    "capacity": 0.5,
+    "comp_id": "x3"
+  },
+  "n6": {
+    "x": -3.0,
+    "y": 1.0,
+    "station_stage": null,
+    "capacity": null,
+    "comp_id": null
+  },
+  "n7": {
+    "x": -3.0,
+    "y": 0.0,
+    "station_stage": 2,
+    "capacity": 0.5,
+    "comp_id": "x4"
+  },
+  "n8": {
+    "x": -4.5,
+    "y": 1.0,
+    "station_stage": null,
+    "capacity": null,
+    "comp_id": null
+  },
+  "n9": {
+    "x": -4.5,
+    "y": 0.0,
+    "station_stage": 2,
+    "capacity": 0.5,
+    "comp_id": "x5"
+  },
+  "n10": {
+    "x": -1.5,
+    "y": 2.0,
+    "station_stage": 3,
+    "capacity": 0.5,
+    "comp_id": "x6"
+  },
+  "n11": {
+    "x": -1.5,
+    "y": 3.0,
+    "station_stage": null,
+    "capacity": null,
+    "comp_id": null
+  },
+  "n12": {
+    "x": -4.5,
+    "y": 2.0,
+    "station_stage": 3,
+    "capacity": 0.5,
+    "comp_id": "x7"
+  },
+  "n13": {
+    "x": -4.5,
+    "y": 3.0,
+    "station_stage": null,
+    "capacity": null,
+    "comp_id": null
+  },
+  "n14": {
+    "x": -6.0,
+    "y": 3.0,
+    "station_stage": 4,
+    "capacity": 1.0,
+    "comp_id": "x8"
+  }
+}

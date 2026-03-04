@@ -45,7 +45,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Available Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ndtools.html">ndtools Package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../generating%20random%20networks.html">Random Network Generator (ndtools)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generating%20networks.html">Random Network Generator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../how%20to%20contribute.html">How to contribute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributors.html">Contributors</a></li>
@@ -230,9 +230,9 @@
     <span class="n">destinations</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
     <span class="o">*</span><span class="p">,</span>
     <span class="n">avg_speed</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">60.0</span><span class="p">,</span>        <span class="c1"># distance units per hour (e.g., km/h)</span>
-    <span class="n">target_max</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>        <span class="c1"># allowed extra time over baseline, in HOURS</span>
+    <span class="n">target_max</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">list</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>        <span class="c1"># allowed extra time over baseline, in HOURS</span>
     <span class="n">length_attr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;length&quot;</span><span class="p">,</span>    <span class="c1"># edge length attribute (e.g., km)</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span> <span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span> <span class="nb">int</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
     <span class="n">dest_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">destinations</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">dest_set</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;no destinations provided&quot;</span><span class="p">}</span>
@@ -330,7 +330,7 @@
         <span class="p">}</span>
 
     <span class="n">dest_f</span><span class="p">,</span> <span class="n">dist_f</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">reach_f</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">time_f</span> <span class="o">=</span> <span class="n">dist_f</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">avg_speed</span><span class="p">)</span>  <span class="c1"># hours</span>
+    <span class="n">time_f</span> <span class="o">=</span> <span class="n">dist_f</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">avg_speed</span><span class="p">)</span>  
     <span class="n">path_f_nodes</span> <span class="o">=</span> <span class="n">paths_f</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">dest_f</span><span class="p">)</span>
     <span class="n">path_f_chain</span> <span class="o">=</span> <span class="n">_node_edge_chain</span><span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">path_f_nodes</span><span class="p">)</span>
     <span class="n">path_f_edges</span> <span class="o">=</span> <span class="n">_edge_ids_on_path</span><span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">path_f_nodes</span><span class="p">)</span>
@@ -364,6 +364,187 @@
         <span class="s2">&quot;reached_any&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="n">time_f</span><span class="p">,</span> <span class="n">sys_st</span><span class="p">,</span> <span class="n">info</span></div>
+
+
+
+<div class="viewcode-block" id="eval_population_accessibility">
+<a class="viewcode-back" href="../../ndtools.html#ndtools.fun_binary_graph.eval_population_accessibility">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">eval_population_accessibility</span><span class="p">(</span>
+    <span class="n">comps_state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+    <span class="n">G_base</span><span class="p">:</span> <span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">,</span>
+    <span class="n">destinations</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+    <span class="o">*</span><span class="p">,</span>
+    <span class="n">target_time_max</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>   <span class="c1"># allowed extra time over baseline [hours]</span>
+    <span class="n">avg_speed</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">60.0</span><span class="p">,</span>        <span class="c1"># distance units per hour (e.g. km/h)</span>
+    <span class="n">length_attr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;length&quot;</span><span class="p">,</span>
+    <span class="n">target_pop_max</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">list</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">,</span>
+    <span class="n">population_attr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;population&quot;</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span> <span class="nb">int</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Evaluate population accessibility to destination nodes under binary component states.</span>
+
+<span class="sd">    A node is considered CONNECTED if:</span>
+<span class="sd">        t_filtered(node) &lt;= t_baseline(node) + target_time_max</span>
+
+<span class="sd">    System state:</span>
+<span class="sd">        1 if (connected_population / total_population) &gt;= target_pop_max</span>
+<span class="sd">        0 otherwise</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        connected_population_ratio (float or None),</span>
+<span class="sd">        system_state (1 or 0),</span>
+<span class="sd">        info (diagnostics dictionary)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">dest_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">destinations</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">dest_set</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;no_destinations_provided&quot;</span><span class="p">}</span>
+
+    <span class="c1"># --------------------------------------------------</span>
+    <span class="c1"># Baseline graph (ignore component states)</span>
+    <span class="c1"># --------------------------------------------------</span>
+    <span class="n">Hb</span> <span class="o">=</span> <span class="n">G_base</span><span class="o">.</span><span class="vm">__class__</span><span class="p">()</span>
+    <span class="n">Hb</span><span class="o">.</span><span class="n">add_nodes_from</span><span class="p">(</span><span class="n">G_base</span><span class="o">.</span><span class="n">nodes</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">G_base</span><span class="o">.</span><span class="n">edges</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">length_attr</span> <span class="ow">in</span> <span class="n">data</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="n">length_attr</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">Hb</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="o">**</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="n">cand_dest_b</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dest_set</span> <span class="k">if</span> <span class="n">Hb</span><span class="o">.</span><span class="n">has_node</span><span class="p">(</span><span class="n">d</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">cand_dest_b</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;no_destinations_in_baseline&quot;</span><span class="p">}</span>
+
+    <span class="c1"># Reverse Dijkstra: shortest distance TO nearest destination</span>
+    <span class="n">dist_b</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">cand_dest_b</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">dmap</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">single_source_dijkstra_path_length</span><span class="p">(</span>
+                <span class="n">Hb</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">length_attr</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">dmap</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">dist_b</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dist_b</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">)),</span> <span class="n">val</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">nx</span><span class="o">.</span><span class="n">NetworkXNoPath</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+    <span class="c1"># --------------------------------------------------</span>
+    <span class="c1"># Filtered graph (apply binary component states)</span>
+    <span class="c1"># --------------------------------------------------</span>
+    <span class="n">node_off</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">cid</span> <span class="k">for</span> <span class="n">cid</span><span class="p">,</span> <span class="n">st</span> <span class="ow">in</span> <span class="n">comps_state</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">st</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">cid</span> <span class="ow">in</span> <span class="n">G_base</span><span class="o">.</span><span class="n">nodes</span>
+    <span class="p">}</span>
+    <span class="n">edge_on</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">cid</span> <span class="k">for</span> <span class="n">cid</span><span class="p">,</span> <span class="n">st</span> <span class="ow">in</span> <span class="n">comps_state</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">st</span> <span class="o">==</span> <span class="mi">1</span>
+    <span class="p">}</span>
+
+    <span class="n">H</span> <span class="o">=</span> <span class="n">G_base</span><span class="o">.</span><span class="vm">__class__</span><span class="p">()</span>
+    <span class="n">H</span><span class="o">.</span><span class="n">add_nodes_from</span><span class="p">(</span><span class="n">G_base</span><span class="o">.</span><span class="n">nodes</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">G_base</span><span class="o">.</span><span class="n">edges</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">node_off</span> <span class="ow">or</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">node_off</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">eid</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;eid&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">eid</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">eid</span> <span class="ow">in</span> <span class="n">edge_on</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">length_attr</span> <span class="ow">in</span> <span class="n">data</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="n">length_attr</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">H</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="o">**</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="n">cand_dest_f</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dest_set</span> <span class="k">if</span> <span class="n">H</span><span class="o">.</span><span class="n">has_node</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="ow">and</span> <span class="n">d</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">node_off</span><span class="p">]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">cand_dest_f</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;no_destinations_in_filtered&quot;</span><span class="p">}</span>
+
+    <span class="c1"># Reverse Dijkstra on filtered graph</span>
+    <span class="n">dist_f</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">cand_dest_f</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">dmap</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">single_source_dijkstra_path_length</span><span class="p">(</span>
+                <span class="n">H</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">length_attr</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">dmap</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">dist_f</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dist_f</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">)),</span> <span class="n">val</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">nx</span><span class="o">.</span><span class="n">NetworkXNoPath</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+    <span class="c1"># --------------------------------------------------</span>
+    <span class="c1"># Population accounting</span>
+    <span class="c1"># --------------------------------------------------</span>
+    <span class="n">total_pop</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">connected_pop</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">node_details</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">G_base</span><span class="o">.</span><span class="n">nodes</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">dest_set</span><span class="p">:</span>
+            <span class="k">continue</span>  <span class="c1"># skip destination nodes</span>
+        <span class="n">pop</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">population_attr</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+        <span class="n">total_pop</span> <span class="o">+=</span> <span class="n">pop</span>
+
+        <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">node_off</span><span class="p">:</span>
+            <span class="n">node_details</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">&quot;population&quot;</span><span class="p">:</span> <span class="n">pop</span><span class="p">,</span>
+                <span class="s2">&quot;reachable&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+                <span class="s2">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;node_off&quot;</span><span class="p">,</span>
+            <span class="p">}</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">n</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dist_f</span><span class="p">:</span>
+            <span class="n">node_details</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">&quot;population&quot;</span><span class="p">:</span> <span class="n">pop</span><span class="p">,</span>
+                <span class="s2">&quot;reachable&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+                <span class="s2">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;no_path_filtered&quot;</span><span class="p">,</span>
+            <span class="p">}</span>
+            <span class="k">continue</span>
+
+        <span class="n">time_f</span> <span class="o">=</span> <span class="n">dist_f</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">/</span> <span class="n">avg_speed</span>
+
+        <span class="k">if</span> <span class="n">n</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dist_b</span><span class="p">:</span>
+            <span class="n">ok</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">time_b</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">time_b</span> <span class="o">=</span> <span class="n">dist_b</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">/</span> <span class="n">avg_speed</span>
+            <span class="n">ok</span> <span class="o">=</span> <span class="n">time_f</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="n">time_b</span> <span class="o">+</span> <span class="n">target_time_max</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">ok</span><span class="p">:</span>
+            <span class="n">connected_pop</span> <span class="o">+=</span> <span class="n">pop</span>
+
+        <span class="n">node_details</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;population&quot;</span><span class="p">:</span> <span class="n">pop</span><span class="p">,</span>
+            <span class="s2">&quot;travel_time_filtered_hours&quot;</span><span class="p">:</span> <span class="n">time_f</span><span class="p">,</span>
+            <span class="s2">&quot;travel_time_baseline_hours&quot;</span><span class="p">:</span> <span class="n">time_b</span><span class="p">,</span>
+            <span class="s2">&quot;extra_time_hours&quot;</span><span class="p">:</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">time_b</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">time_f</span> <span class="o">-</span> <span class="n">time_b</span><span class="p">,</span>
+            <span class="s2">&quot;within_threshold&quot;</span><span class="p">:</span> <span class="n">ok</span><span class="p">,</span>
+        <span class="p">}</span>
+
+    <span class="k">if</span> <span class="n">total_pop</span> <span class="o">&lt;=</span> <span class="mf">0.0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;total_population_zero&quot;</span><span class="p">}</span>
+
+    <span class="n">connected_ratio</span> <span class="o">=</span> <span class="n">connected_pop</span> <span class="o">/</span> <span class="n">total_pop</span>
+
+    <span class="c1"># ----- Threshold check (scalar or multi-level) -----</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">target_pop_max</span><span class="p">,</span> <span class="nb">float</span><span class="p">):</span>
+        <span class="n">target_pop_max</span> <span class="o">=</span> <span class="p">[</span><span class="n">target_pop_max</span><span class="p">]</span>
+
+    <span class="c1"># ensure sorted thresholds (important)</span>
+    <span class="n">target_pop_max</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">target_pop_max</span><span class="p">)</span>
+
+    <span class="n">system_state</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span>
+        <span class="p">(</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">target_pop_max</span><span class="p">)</span> <span class="k">if</span> <span class="n">connected_ratio</span> <span class="o">&lt;</span> <span class="n">p</span><span class="p">),</span>
+        <span class="nb">len</span><span class="p">(</span><span class="n">target_pop_max</span><span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="c1"># --------------------------------------------------</span>
+    <span class="c1"># Diagnostics</span>
+    <span class="c1"># --------------------------------------------------</span>
+    <span class="n">time_f</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="n">d</span> <span class="o">/</span> <span class="n">avg_speed</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dist_f</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="n">time_b</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="n">d</span> <span class="o">/</span> <span class="n">avg_speed</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dist_b</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;connected_population&quot;</span><span class="p">:</span> <span class="n">connected_pop</span><span class="p">,</span>
+        <span class="s2">&quot;total_population&quot;</span><span class="p">:</span> <span class="n">total_pop</span><span class="p">,</span>
+        <span class="s2">&quot;connected_population_ratio&quot;</span><span class="p">:</span> <span class="n">connected_ratio</span><span class="p">,</span>
+        <span class="s2">&quot;travel_time&quot;</span><span class="p">:</span> <span class="n">time_f</span><span class="p">,</span>
+        <span class="s2">&quot;baseline_travel_time&quot;</span><span class="p">:</span> <span class="n">time_b</span><span class="p">,</span>
+        <span class="s2">&quot;avg_speed_per_hour&quot;</span><span class="p">:</span> <span class="n">avg_speed</span><span class="p">,</span>
+        <span class="s2">&quot;node_details&quot;</span><span class="p">:</span> <span class="n">node_details</span><span class="p">,</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">connected_ratio</span><span class="p">,</span> <span class="n">system_state</span><span class="p">,</span> <span class="n">info</span></div>
+
 
 </pre></div>
 

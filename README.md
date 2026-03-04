@@ -21,27 +21,43 @@ The datasets are designed for use with [MBNpy](https://github.com/jieunbyun/mbnp
 
 ## Installation
 
-You can install the tools `ndtools` into your Python environment.
+The `ndtools` utilities can be installed either as a **released package** from PyPI
+or in **editable (developer) mode** from the source repository.
 
-### Using pip (editable install)
-From the repository root:
+### Using pip (recommended for users)
+
+Install the latest released version from PyPI:
 
 ```bash
-# First activate your conda environment (if using conda)
-conda activate <your-env>
-
-# Then install in editable mode
-pip install -e .
+pip install ndtools-duco
 ```
 
-This makes the `ndtools` package importable anywhere in that environment.
+This installs a stable version of the tools suitable for general use.
 
-### Verify installation
+Verify the installation:
+
 ```bash
 python -c "import ndtools; print(ndtools.__version__)"
 ```
 
-### Run tests
+---
+
+### Using pip (editable / developer install)
+
+If you are developing `ndtools` or working directly with the source code,
+install in editable mode from the repository root:
+
+```bash
+# Activate your environment first (if using conda)
+conda activate <your-env>
+
+# Install in editable mode
+pip install -e .
+```
+
+---
+
+### Run tests (developers)
 ```bash
 pytest -q
 ```

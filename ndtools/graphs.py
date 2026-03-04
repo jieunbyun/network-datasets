@@ -177,3 +177,5 @@ def compute_edge_lengths(nodes_dict, edges_dict):
         lengths[eid] = math.hypot(x2 - x1, y2 - y1)
     return lengths
 
+if __name__ == "__main__":
+    output_path = draw_graph_from_data("datasets/toynet_11edges/v1/data")

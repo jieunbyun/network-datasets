@@ -138,9 +138,20 @@ def eval_travel_time_to_nearest(
     destinations: Iterable[str],
     *,
     avg_speed: float = 60.0,        # distance units per hour (e.g., km/h)
-    target_max: float = 0.5,        # allowed extra time over baseline, in HOURS
+    target_max: float | list = 0.5,        # allowed extra time over baseline, in HOURS
     length_attr: str = "length",    # edge length attribute (e.g., km)
-) -> Tuple[Optional[float], str, Dict[str, Any]]:
+) -> Tuple[Optional[float], int, Dict[str, Any]]:
+    """
+    Evalute the shortest time from a specified origin to the nearest destination node
+    under binary component states.
+
+    A node is considered REACHABLE if:
+        t_filtered(origin) <= t_baseline(origin) + target_max
+    System state:
+        1 if reachable else 0
+    Returns:
+        travel_time_filtered (float or None), system state (int), info (diagnostics dictionary)
+    """
     dest_set = set(destinations)
     if not dest_set:
         return None, 0, {"reason": "no destinations provided"}
@@ -238,7 +249,7 @@ def eval_travel_time_to_nearest(
         }
 
     dest_f, dist_f = min(reach_f, key=lambda x: x[1])
-    time_f = dist_f / float(avg_speed)  # hours
+    time_f = dist_f / float(avg_speed)  
     path_f_nodes = paths_f.get(dest_f)
     path_f_chain = _node_edge_chain(H, path_f_nodes)
     path_f_edges = _edge_ids_on_path(H, path_f_nodes)
@@ -272,3 +283,261 @@ def eval_travel_time_to_nearest(
         "reached_any": True,
     }
     return time_f, sys_st, info
+
+
+def eval_population_accessibility(
+    comps_state: Dict[str, int],
+    G_base: nx.Graph,
+    destinations: Iterable[str],
+    *,
+    target_time_max: float = 0.5,   # allowed extra time over baseline [hours]
+    avg_speed: float = 60.0,        # distance units per hour (e.g. km/h)
+    length_attr: str = "length",
+    target_pop_max: float | list = 0.7,
+    population_attr: str = "population",
+) -> Tuple[Optional[float], int, Dict[str, Any]]:
+    """
+    Evaluate population accessibility to destination nodes under binary component states.
+
+    A node is considered CONNECTED if:
+        t_filtered(node) <= t_baseline(node) + target_time_max
+
+    System state:
+        1 if (connected_population / total_population) >= target_pop_max
+        0 otherwise
+
+    Returns:
+        connected_population_ratio (float or None),
+        system_state (1 or 0),
+        info (diagnostics dictionary)
+    """
+
+    dest_set = set(destinations)
+    if not dest_set:
+        return None, 0, {"reason": "no_destinations_provided"}
+
+    # --------------------------------------------------
+    # Baseline graph (ignore component states)
+    # --------------------------------------------------
+    Hb = G_base.__class__()
+    Hb.add_nodes_from(G_base.nodes(data=True))
+    for u, v, data in G_base.edges(data=True):
+        if length_attr in data and data[length_attr] is not None:
+            Hb.add_edge(u, v, **data)
+
+    cand_dest_b = [d for d in dest_set if Hb.has_node(d)]
+    if not cand_dest_b:
+        return None, 0, {"reason": "no_destinations_in_baseline"}
+
+    # Reverse Dijkstra: shortest distance TO nearest destination
+    dist_b = {}
+    for d in cand_dest_b:
+        try:
+            dmap = nx.single_source_dijkstra_path_length(
+                Hb, d, weight=length_attr
+            )
+            for n, val in dmap.items():
+                dist_b[n] = min(dist_b.get(n, float("inf")), val)
+        except nx.NetworkXNoPath:
+            continue
+
+    # --------------------------------------------------
+    # Filtered graph (apply binary component states)
+    # --------------------------------------------------
+    node_off = {
+        cid for cid, st in comps_state.items()
+        if st == 0 and cid in G_base.nodes
+    }
+    edge_on = {
+        cid for cid, st in comps_state.items() if st == 1
+    }
+
+    H = G_base.__class__()
+    H.add_nodes_from(G_base.nodes(data=True))
+    for u, v, data in G_base.edges(data=True):
+        if u in node_off or v in node_off:
+            continue
+        eid = data.get("eid")
+        if eid is not None and eid in edge_on:
+            if length_attr in data and data[length_attr] is not None:
+                H.add_edge(u, v, **data)
+
+    cand_dest_f = [d for d in dest_set if H.has_node(d) and d not in node_off]
+    if not cand_dest_f:
+        return None, 0, {"reason": "no_destinations_in_filtered"}
+
+    # Reverse Dijkstra on filtered graph
+    dist_f = {}
+    for d in cand_dest_f:
+        try:
+            dmap = nx.single_source_dijkstra_path_length(
+                H, d, weight=length_attr
+            )
+            for n, val in dmap.items():
+                dist_f[n] = min(dist_f.get(n, float("inf")), val)
+        except nx.NetworkXNoPath:
+            continue
+
+    # --------------------------------------------------
+    # Population accounting
+    # --------------------------------------------------
+    total_pop = 0.0
+    connected_pop = 0.0
+    node_details = {}
+
+    for n, data in G_base.nodes(data=True):
+        if n in dest_set:
+            continue  # skip destination nodes
+        pop = float(data.get(population_attr, 0.0))
+        total_pop += pop
+
+        if n in node_off:
+            node_details[n] = {
+                "population": pop,
+                "reachable": False,
+                "reason": "node_off",
+            }
+            continue
+
+        if n not in dist_f:
+            node_details[n] = {
+                "population": pop,
+                "reachable": False,
+                "reason": "no_path_filtered",
+            }
+            continue
+
+        time_f = dist_f[n] / avg_speed
+
+        if n not in dist_b:
+            ok = False
+            time_b = None
+        else:
+            time_b = dist_b[n] / avg_speed
+            ok = time_f <= (time_b + target_time_max)
+
+        if ok:
+            connected_pop += pop
+
+        node_details[n] = {
+            "population": pop,
+            "travel_time_filtered_hours": time_f,
+            "travel_time_baseline_hours": time_b,
+            "extra_time_hours": None if time_b is None else time_f - time_b,
+            "within_threshold": ok,
+        }
+
+    if total_pop <= 0.0:
+        return None, 0, {"reason": "total_population_zero"}
+
+    connected_ratio = connected_pop / total_pop
+
+    # ----- Threshold check (scalar or multi-level) -----
+    if isinstance(target_pop_max, float):
+        target_pop_max = [target_pop_max]
+
+    # ensure sorted thresholds (important)
+    target_pop_max = sorted(float(p) for p in target_pop_max)
+
+    system_state = next(
+        (i for i, p in enumerate(target_pop_max) if connected_ratio < p),
+        len(target_pop_max)
+    )
+
+    # --------------------------------------------------
+    # Diagnostics
+    # --------------------------------------------------
+    time_f = {n: d / avg_speed for n, d in dist_f.items()}
+    time_b = {n: d / avg_speed for n, d in dist_b.items()}
+    info = {
+        "connected_population": connected_pop,
+        "total_population": total_pop,
+        "connected_population_ratio": connected_ratio,
+        "travel_time": time_f,
+        "baseline_travel_time": time_b,
+        "avg_speed_per_hour": avg_speed,
+        "node_details": node_details,
+    }
+
+    return connected_ratio, system_state, info
+
+def eval_1od_connectivity(
+    comps_st: Dict[str, int],
+    G: nx.Graph,
+    orig_node: str,
+    dest_node: str,
+    *,
+    edge_id_attr: str = "eid",
+) -> Tuple[str, int, Dict[str, Any]]:
+    """
+    Apply component states to G and check connectivity of a single origin-destination pair.
+
+    The node is considered CONNECTED if there exists a path from orig_node to dest_node.
+
+    System state:
+        1 if path exists else 0
+
+    Returns:
+      ('disconnected' or 'connected', 0 or 1, info dict)
+    """
+    # --- node/edge states interpreted the same way as your original function ---
+    node_off = {cid for cid, st in comps_st.items() if st == 0 and cid in G.nodes}
+    edge_on  = {cid for cid, st in comps_st.items() if st == 1}
+
+    # quick failures
+    if orig_node in node_off or dest_node in node_off:
+        return 0, {"reason": "origin_or_destination_off", "node_off": True}
+
+    if not G.has_node(orig_node) or not G.has_node(dest_node):
+        return 0, {"reason": "origin_or_destination_missing_in_base"}
+
+    # --- build filtered graph ---
+    H = G.__class__()
+    H.add_nodes_from(G.nodes(data=True))
+
+    kept_edges = 0
+    skipped_no_eid = 0
+
+    for u, v, data in G.edges(data=True):
+        # drop edges incident to removed nodes
+        if u in node_off or v in node_off:
+            continue
+
+        eid = data.get(edge_id_attr)
+        if eid is None:
+            skipped_no_eid += 1
+            continue
+
+        # keep only "on" edges
+        if eid in edge_on:
+            H.add_edge(u, v, **data)
+            kept_edges += 1
+
+    # If origin/destination got isolated, has_path will return False anyway,
+    # but keeping this check makes the reason clearer.
+    if not H.has_node(orig_node) or not H.has_node(dest_node):
+        return 0, {"reason": "origin_or_destination_missing_in_filtered"}
+
+    try:
+        path_nodes = nx.shortest_path(H, orig_node, dest_node)
+        connected = True
+    except nx.NetworkXNoPath:
+        path_nodes = None
+        connected = False
+
+    # Get the path edges and nodes
+    if path_nodes is not None:
+        path_eids = [
+            H.edges[u, v]["eid"]
+            for u, v in zip(path_nodes[:-1], path_nodes[1:])
+        ]
+    else:
+        path_eids = None
+
+
+    info = {
+        "connected": connected,
+        "path_nodes": path_nodes,
+        "path_edge_ids": path_eids
+    }
+    return ("connected" if connected else "disconnected"), (1 if connected else 0), info

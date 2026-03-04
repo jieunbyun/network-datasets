@@ -1,0 +1,154 @@
+{
+    "e1": {
+        "from": "n1",
+        "to": "n3",
+        "directed": true,
+        "transition_start_stage": [1],
+        "capacity": 1.0,
+        "comp_id": "x9"
+    },
+    "e2": {
+        "from": "n2",
+        "to": "n3",
+        "directed": true,
+        "transition_start_stage": [1],
+        "capacity": 1.0,
+        "comp_id": "x10"
+    },
+    "e3": {
+        "from": "n3",
+        "to": "n4",
+        "directed": true,
+        "transition_start_stage": [1],
+        "capacity": 1.0,
+        "comp_id": "x11"
+    },
+    "e4": {
+        "from": "n4",
+        "to": "n5",
+        "directed": true,
+        "transition_start_stage": [1],
+        "capacity": 1.0,
+        "comp_id": "x12"
+    },
+    "e5": {
+        "from": "n5",
+        "to": "n4",
+        "directed": true,
+        "transition_start_stage": [2],
+        "capacity": 1.0,
+        "comp_id": "x12"
+    },
+    "e6": {
+        "from": "n4",
+        "to": "n6",
+        "directed": true,
+        "transition_start_stage": [1, 2],
+        "capacity": 1.0,
+        "comp_id": "x13"
+    },
+    "e7": {
+        "from": "n6",
+        "to": "n4",
+        "directed": true,
+        "transition_start_stage": [2],
+        "capacity": 1.0,
+        "comp_id": "x13"
+    },
+    "e8": {
+        "from": "n4",
+        "to": "n10",
+        "directed": true,
+        "transition_start_stage": [2],
+        "capacity": 1.0,
+        "comp_id": "x14"
+    },
+    "e9": {
+        "from": "n6",
+        "to": "n7",
+        "directed": true,
+        "transition_start_stage": [1],
+        "capacity": 1.0,
+        "comp_id": "x15"
+    },
+    "e10": {
+        "from": "n7",
+        "to": "n6",
+        "directed": true,
+        "transition_start_stage": [2],
+        "capacity": 1.0,
+        "comp_id": "x15"
+    },
+    "e11": {
+        "from": "n6",
+        "to": "n8",
+        "directed": true,
+        "transition_start_stage": [1, 2],
+        "capacity": 1.0,
+        "comp_id": "x16"
+    },
+    "e12": {
+        "from": "n8",
+        "to": "n6",
+        "directed": true,
+        "transition_start_stage": [2],
+        "capacity": 1.0,
+        "comp_id": "x16"
+    },
+    "e13": {
+        "from": "n8",
+        "to": "n9",
+        "directed": true,
+        "transition_start_stage": [1],
+        "capacity": 1.0,
+        "comp_id": "x17"
+    },
+    "e14": {
+        "from": "n9",
+        "to": "n8",
+        "directed": true,
+        "transition_start_stage": [2],
+        "capacity": 1.0,
+        "comp_id": "x17"
+    },
+    "e15": {
+        "from": "n8",
+        "to": "n12",
+        "directed": true,
+        "transition_start_stage": [2],
+        "capacity": 1.0,
+        "comp_id": "x18"
+    },
+    "e16": {
+        "from": "n10",
+        "to": "n11",
+        "directed": true,
+        "transition_start_stage": [3],
+        "capacity": 1.0,
+        "comp_id": "x19"
+    },
+    "e17": {
+        "from": "n11",
+        "to": "n13",
+        "directed": true,
+        "transition_start_stage": [3],
+        "capacity": 1.0,
+        "comp_id": "x20"
+    },
+    "e18": {
+        "from": "n12",
+        "to": "n13",
+        "directed": true,
+        "transition_start_stage": [3],
+        "capacity": 1.0,
+        "comp_id": "x21"
+    },
+    "e19": {
+        "from": "n13",
+        "to": "n14",
+        "directed": true,
+        "transition_start_stage": [3],
+        "capacity": 1.0,
+        "comp_id": "x22"
+    }
+}

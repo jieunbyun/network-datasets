@@ -172,8 +172,8 @@ Calculate Euclidean distances for edges with spatial coordinates:
    for edge_id, length in lengths.items():
        print(f"Edge {edge_id}: {length:.2f} km")
 
-System Function Evaluation
--------------------------
+System Performance Evaluation
+-------------------------------
 
 The package includes functions for evaluating system performance under different failure scenarios:
 

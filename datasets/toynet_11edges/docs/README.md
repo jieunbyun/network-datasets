@@ -7,10 +7,10 @@ It can be useful for testing and demonstration purposes.
 ## Structure
 
 - `data/nodes.json`  
-  Dictionary of nodes with coordinates,.  
+  Dictionary of nodes with coordinates and demand.  
   Example entry:
   ```json
-  "N1": { "x": 0, "y": 1 }
+  "N1": { "x": 0, "y": 1, "population": 10 }
   ```
 - `data/edges.json`  
   Dictionary of edges with from, to, and macrocomponent_type.  
@@ -29,6 +29,7 @@ It can be useful for testing and demonstration purposes.
 
 ### Nodes
 - x, y — schematic coordinates (not geodetic).
+- demand — population at the node.
 
 ### Edges
 - from, to — node IDs.

@@ -1,3 +1,8 @@
 {
-  "tests/test_graphs.py::test_compute_edge_lengths": true
+  "tests/test_graphs.py::test_compute_edge_lengths": true,
+  "tests/test_staged_max_flow.py::test_get_names_to_decision_vars1": true,
+  "tests/test_staged_max_flow.py::test_get_names_to_decision_vars2": true,
+  "tests/test_staged_max_flow.py::test_get_min_surv_comps_st1": true,
+  "tests/test_staged_max_flow.py::test_get_min_surv_comps_st3": true,
+  "tests/test_staged_max_flow.py::test_deactivate_a_component1": true
 }
