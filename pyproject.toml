@@ -2,7 +2,12 @@
 name = "ndtools"
 version = "0.1.5"
 requires-python = ">=3.9"
-dependencies = ["networkx>=3.0", "pyyaml>=6.0", "jsonschema>=4.0", "matplotlib>=3.4"]
+dependencies = [
+    "networkx>=3.0",
+    "pyyaml>=6.0",
+    "jsonschema>=4.0",
+    "matplotlib>=3.4",
+]
 
 [build-system]
 requires = ["setuptools>=68"]
