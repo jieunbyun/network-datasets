@@ -39,34 +39,33 @@ Overview
    :widths: 20 20 20 40
 
    * - Network type
+     - Typical real-world interpretation
      - Generative principle
      - Key structural feature
-     - Typical real-world interpretation
    * - Grid
+     - Planned grid-layout road networks
      - Regular lattice
      - Uniform degree
-     - Planned grid-layout road networks
    * - Erdős–Rényi (ER)
+     - Purely random connectivity
      - Random edge formation
      - Homogeneous degree distribution
-     - Purely random connectivity
    * - Watts–Strogatz (WS)
+     - Small-world networks (e.g. social or collaboration networks)
      - Local lattice with random rewiring
      - High clustering, short paths
-     - Small-world networks (e.g. social or collaboration networks)
    * - Random geometric
+     - Physical infrastructure networks constrained by distance (e.g. roads, pipelines, power distribution)
      - Spatial proximity
      - Spatial clustering
-     - Physical infrastructure networks constrained by distance (e.g. roads, pipelines, power distribution)
    * - Configuration graph
+     - Networks preserving observed node connectivities while randomising links
      - Fixed number of connections per node
      - Non-uniform number of connections across nodes
-     - Networks preserving observed node connectivities while randomising links
    * - Barabási–Albert (BA)
+     - Hub-based networks formed by growth (e.g. airline, internet, service networks)
      - Growth with preferential attachment
      - Scale-free degree distribution with hubs
-     - Hub-based networks formed by growth (e.g. airline, internet, service networks)
-
 Example networks are illustrated below:
 
 .. figure:: _static/gen_networks_ndtools.png
