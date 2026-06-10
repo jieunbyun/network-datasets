@@ -11,6 +11,7 @@ __pycache__/
 Thumbs.db
 /pytest_cache/
 .vscode/
+ndtools/__pycache__
 
 # Ignore everything in generated/
 generated/*

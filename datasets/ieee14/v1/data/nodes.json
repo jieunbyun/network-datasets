@@ -1,0 +1,168 @@
+{
+    "bus1": {
+        "x": 9.9334,
+        "y": 10.0,
+        "type": "source",
+        "capacity": 332.4,
+        "unit": "MW"
+    },
+    "bus1_int": {
+        "x": 10.0834,
+        "y": 10.15,
+        "type": "transmission"
+    },
+    "bus2": {
+        "x": 7.4171,
+        "y": 6.831,
+        "type": "source",
+        "capacity": 140.0,
+        "unit": "MW"
+    },
+    "bus2_int": {
+        "x": 7.5671,
+        "y": 6.981,
+        "type": "transmission"
+    },
+    "bus3": {
+        "x": 0.0,
+        "y": 2.2311,
+        "type": "source",
+        "capacity": 100.0,
+        "unit": "MW"
+    },
+    "bus3_int": {
+        "x": 0.15,
+        "y": 2.3811,
+        "type": "transmission"
+    },
+    "bus4": {
+        "x": 2.2939,
+        "y": 3.6167,
+        "type": "output",
+        "capacity": 47.8,
+        "unit": "MW"
+    },
+    "bus4_int": {
+        "x": 2.4439,
+        "y": 3.7667,
+        "type": "transmission"
+    },
+    "bus5": {
+        "x": 3.033,
+        "y": 4.561,
+        "type": "output",
+        "capacity": 7.6,
+        "unit": "MW"
+    },
+    "bus5_int": {
+        "x": 3.183,
+        "y": 4.711,
+        "type": "transmission"
+    },
+    "bus6": {
+        "x": 6.907,
+        "y": 0.818,
+        "type": "source",
+        "capacity": 100.0,
+        "unit": "MW"
+    },
+    "bus6_int": {
+        "x": 7.057,
+        "y": 0.968,
+        "type": "transmission"
+    },
+    "bus7": {
+        "x": 6.376,
+        "y": 1.4211,
+        "type": "transmission"
+    },
+    "bus7_int": {
+        "x": 6.526,
+        "y": 1.5711,
+        "type": "transmission"
+    },
+    "bus8": {
+        "x": 10.0,
+        "y": 1.2014,
+        "type": "source",
+        "capacity": 100.0,
+        "unit": "MW"
+    },
+    "bus8_int": {
+        "x": 10.15,
+        "y": 1.3514,
+        "type": "transmission"
+    },
+    "bus9": {
+        "x": 4.6608,
+        "y": 0.4895,
+        "type": "output",
+        "capacity": 29.5,
+        "unit": "MW"
+    },
+    "bus9_int": {
+        "x": 4.8108,
+        "y": 0.6395,
+        "type": "transmission"
+    },
+    "bus10": {
+        "x": 3.9181,
+        "y": 0.4355,
+        "type": "output",
+        "capacity": 9.0,
+        "unit": "MW"
+    },
+    "bus10_int": {
+        "x": 4.0681,
+        "y": 0.5855,
+        "type": "transmission"
+    },
+    "bus11": {
+        "x": 4.8834,
+        "y": 0.5739,
+        "type": "output",
+        "capacity": 3.5,
+        "unit": "MW"
+    },
+    "bus11_int": {
+        "x": 5.0334,
+        "y": 0.7239,
+        "type": "transmission"
+    },
+    "bus12": {
+        "x": 4.4502,
+        "y": 0.4177,
+        "type": "output",
+        "capacity": 6.1,
+        "unit": "MW"
+    },
+    "bus12_int": {
+        "x": 4.6002,
+        "y": 0.5677,
+        "type": "transmission"
+    },
+    "bus13": {
+        "x": 3.7518,
+        "y": 0.4075,
+        "type": "output",
+        "capacity": 13.5,
+        "unit": "MW"
+    },
+    "bus13_int": {
+        "x": 3.9018,
+        "y": 0.5575,
+        "type": "transmission"
+    },
+    "bus14": {
+        "x": 1.3887,
+        "y": 0.0,
+        "type": "output",
+        "capacity": 14.9,
+        "unit": "MW"
+    },
+    "bus14_int": {
+        "x": 1.5387,
+        "y": 0.15,
+        "type": "transmission"
+    }
+}
