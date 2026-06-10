@@ -1,0 +1,469 @@
+{
+    "vbus1": {
+        "from": "bus1",
+        "to": "bus1_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus2": {
+        "from": "bus2",
+        "to": "bus2_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus3": {
+        "from": "bus3",
+        "to": "bus3_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus4": {
+        "from": "bus4",
+        "to": "bus4_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus5": {
+        "from": "bus5",
+        "to": "bus5_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus6": {
+        "from": "bus6",
+        "to": "bus6_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus7": {
+        "from": "bus7",
+        "to": "bus7_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus8": {
+        "from": "bus8",
+        "to": "bus8_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9": {
+        "from": "bus9",
+        "to": "bus9_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus10": {
+        "from": "bus10",
+        "to": "bus10_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus11": {
+        "from": "bus11",
+        "to": "bus11_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus12": {
+        "from": "bus12",
+        "to": "bus12_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus13": {
+        "from": "bus13",
+        "to": "bus13_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus14": {
+        "from": "bus14",
+        "to": "bus14_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus15": {
+        "from": "bus15",
+        "to": "bus15_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus16": {
+        "from": "bus16",
+        "to": "bus16_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus17": {
+        "from": "bus17",
+        "to": "bus17_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus18": {
+        "from": "bus18",
+        "to": "bus18_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus19": {
+        "from": "bus19",
+        "to": "bus19_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus20": {
+        "from": "bus20",
+        "to": "bus20_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus21": {
+        "from": "bus21",
+        "to": "bus21_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus22": {
+        "from": "bus22",
+        "to": "bus22_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus23": {
+        "from": "bus23",
+        "to": "bus23_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus24": {
+        "from": "bus24",
+        "to": "bus24_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus25": {
+        "from": "bus25",
+        "to": "bus25_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus26": {
+        "from": "bus26",
+        "to": "bus26_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus27": {
+        "from": "bus27",
+        "to": "bus27_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus28": {
+        "from": "bus28",
+        "to": "bus28_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus29": {
+        "from": "bus29",
+        "to": "bus29_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus30": {
+        "from": "bus30",
+        "to": "bus30_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "br1": {
+        "from": "bus1_int",
+        "to": "bus2_int",
+        "directed": false,
+        "capacity": 130.0,
+        "unit": "MVA"
+    },
+    "br2": {
+        "from": "bus1_int",
+        "to": "bus3_int",
+        "directed": false,
+        "capacity": 130.0,
+        "unit": "MVA"
+    },
+    "br3": {
+        "from": "bus2_int",
+        "to": "bus4_int",
+        "directed": false,
+        "capacity": 65.0,
+        "unit": "MVA"
+    },
+    "br4": {
+        "from": "bus3_int",
+        "to": "bus4_int",
+        "directed": false,
+        "capacity": 130.0,
+        "unit": "MVA"
+    },
+    "br5": {
+        "from": "bus2_int",
+        "to": "bus5_int",
+        "directed": false,
+        "capacity": 130.0,
+        "unit": "MVA"
+    },
+    "br6": {
+        "from": "bus2_int",
+        "to": "bus6_int",
+        "directed": false,
+        "capacity": 65.0,
+        "unit": "MVA"
+    },
+    "br7": {
+        "from": "bus4_int",
+        "to": "bus6_int",
+        "directed": false,
+        "capacity": 90.0,
+        "unit": "MVA"
+    },
+    "br8": {
+        "from": "bus5_int",
+        "to": "bus7_int",
+        "directed": false,
+        "capacity": 70.0,
+        "unit": "MVA"
+    },
+    "br9": {
+        "from": "bus6_int",
+        "to": "bus7_int",
+        "directed": false,
+        "capacity": 130.0,
+        "unit": "MVA"
+    },
+    "br10": {
+        "from": "bus6_int",
+        "to": "bus8_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br11": {
+        "from": "bus6_int",
+        "to": "bus9_int",
+        "directed": false,
+        "capacity": 65.0,
+        "unit": "MVA"
+    },
+    "br12": {
+        "from": "bus6_int",
+        "to": "bus10_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br13": {
+        "from": "bus9_int",
+        "to": "bus11_int",
+        "directed": false,
+        "capacity": 65.0,
+        "unit": "MVA"
+    },
+    "br14": {
+        "from": "bus9_int",
+        "to": "bus10_int",
+        "directed": false,
+        "capacity": 65.0,
+        "unit": "MVA"
+    },
+    "br15": {
+        "from": "bus4_int",
+        "to": "bus12_int",
+        "directed": false,
+        "capacity": 65.0,
+        "unit": "MVA"
+    },
+    "br16": {
+        "from": "bus12_int",
+        "to": "bus13_int",
+        "directed": false,
+        "capacity": 65.0,
+        "unit": "MVA"
+    },
+    "br17": {
+        "from": "bus12_int",
+        "to": "bus14_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br18": {
+        "from": "bus12_int",
+        "to": "bus15_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br19": {
+        "from": "bus12_int",
+        "to": "bus16_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br20": {
+        "from": "bus14_int",
+        "to": "bus15_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br21": {
+        "from": "bus16_int",
+        "to": "bus17_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br22": {
+        "from": "bus15_int",
+        "to": "bus18_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br23": {
+        "from": "bus18_int",
+        "to": "bus19_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br24": {
+        "from": "bus19_int",
+        "to": "bus20_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br25": {
+        "from": "bus10_int",
+        "to": "bus20_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br26": {
+        "from": "bus10_int",
+        "to": "bus17_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br27": {
+        "from": "bus10_int",
+        "to": "bus21_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br28": {
+        "from": "bus10_int",
+        "to": "bus22_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br29": {
+        "from": "bus21_int",
+        "to": "bus22_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br30": {
+        "from": "bus15_int",
+        "to": "bus23_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br31": {
+        "from": "bus22_int",
+        "to": "bus24_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br32": {
+        "from": "bus23_int",
+        "to": "bus24_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br33": {
+        "from": "bus24_int",
+        "to": "bus25_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br34": {
+        "from": "bus25_int",
+        "to": "bus26_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br35": {
+        "from": "bus25_int",
+        "to": "bus27_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br36": {
+        "from": "bus28_int",
+        "to": "bus27_int",
+        "directed": false,
+        "capacity": 65.0,
+        "unit": "MVA"
+    },
+    "br37": {
+        "from": "bus27_int",
+        "to": "bus29_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br38": {
+        "from": "bus27_int",
+        "to": "bus30_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br39": {
+        "from": "bus29_int",
+        "to": "bus30_int",
+        "directed": false,
+        "capacity": 16.0,
+        "unit": "MVA"
+    },
+    "br40": {
+        "from": "bus8_int",
+        "to": "bus28_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    },
+    "br41": {
+        "from": "bus6_int",
+        "to": "bus28_int",
+        "directed": false,
+        "capacity": 32.0,
+        "unit": "MVA"
+    }
+}

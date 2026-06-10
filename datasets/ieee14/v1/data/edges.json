@@ -1,0 +1,186 @@
+{
+    "vbus1": {
+        "from": "bus1",
+        "to": "bus1_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus2": {
+        "from": "bus2",
+        "to": "bus2_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus3": {
+        "from": "bus3",
+        "to": "bus3_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus4": {
+        "from": "bus4",
+        "to": "bus4_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus5": {
+        "from": "bus5",
+        "to": "bus5_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus6": {
+        "from": "bus6",
+        "to": "bus6_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7": {
+        "from": "bus7",
+        "to": "bus7_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus8": {
+        "from": "bus8",
+        "to": "bus8_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus9": {
+        "from": "bus9",
+        "to": "bus9_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus10": {
+        "from": "bus10",
+        "to": "bus10_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus11": {
+        "from": "bus11",
+        "to": "bus11_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus12": {
+        "from": "bus12",
+        "to": "bus12_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus13": {
+        "from": "bus13",
+        "to": "bus13_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus14": {
+        "from": "bus14",
+        "to": "bus14_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "br1": {
+        "from": "bus1_int",
+        "to": "bus2_int",
+        "directed": false
+    },
+    "br2": {
+        "from": "bus1_int",
+        "to": "bus5_int",
+        "directed": false
+    },
+    "br3": {
+        "from": "bus2_int",
+        "to": "bus3_int",
+        "directed": false
+    },
+    "br4": {
+        "from": "bus2_int",
+        "to": "bus4_int",
+        "directed": false
+    },
+    "br5": {
+        "from": "bus2_int",
+        "to": "bus5_int",
+        "directed": false
+    },
+    "br6": {
+        "from": "bus3_int",
+        "to": "bus4_int",
+        "directed": false
+    },
+    "br7": {
+        "from": "bus4_int",
+        "to": "bus5_int",
+        "directed": false
+    },
+    "br8": {
+        "from": "bus4_int",
+        "to": "bus7_int",
+        "directed": false
+    },
+    "br9": {
+        "from": "bus4_int",
+        "to": "bus9_int",
+        "directed": false
+    },
+    "br10": {
+        "from": "bus5_int",
+        "to": "bus6_int",
+        "directed": false
+    },
+    "br11": {
+        "from": "bus6_int",
+        "to": "bus11_int",
+        "directed": false
+    },
+    "br12": {
+        "from": "bus6_int",
+        "to": "bus12_int",
+        "directed": false
+    },
+    "br13": {
+        "from": "bus6_int",
+        "to": "bus13_int",
+        "directed": false
+    },
+    "br14": {
+        "from": "bus7_int",
+        "to": "bus8_int",
+        "directed": false
+    },
+    "br15": {
+        "from": "bus7_int",
+        "to": "bus9_int",
+        "directed": false
+    },
+    "br16": {
+        "from": "bus9_int",
+        "to": "bus10_int",
+        "directed": false
+    },
+    "br17": {
+        "from": "bus9_int",
+        "to": "bus14_int",
+        "directed": false
+    },
+    "br18": {
+        "from": "bus10_int",
+        "to": "bus11_int",
+        "directed": false
+    },
+    "br19": {
+        "from": "bus12_int",
+        "to": "bus13_int",
+        "directed": false
+    },
+    "br20": {
+        "from": "bus13_int",
+        "to": "bus14_int",
+        "directed": false
+    }
+}

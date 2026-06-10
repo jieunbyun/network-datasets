@@ -47,5 +47,40 @@
     "path": "datasets/process_plants/pressure_regularisation_plant/v1",
     "summary": "A benchmark pressure regularisation plant network.",
     "license": "CC-BY-4.0"
-  }  
+  },
+  {
+    "name": "ieee14",
+    "version": "1.0.0",
+    "path": "datasets/ieee14/v1",
+    "summary": "IEEE 14-bus DC optimal power flow (DC-OPF) blackout model (Chan et al. 2024): 14 buses + 20 branches = 34 components, with 4-state generator buses.",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "name": "ieee30",
+    "version": "1.0.0",
+    "path": "datasets/ieee30/v1",
+    "summary": "IEEE 30-bus DC optimal power flow (DC-OPF) blackout model (Chan et al. 2024): 30 buses + 41 branches = 71 components, with 4-state generator buses.",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "name": "ieee57",
+    "version": "1.0.0",
+    "path": "datasets/ieee57/v1",
+    "summary": "IEEE 57-bus DC optimal power flow (DC-OPF) blackout model (Chan et al. 2024): 57 buses + 80 branches = 137 components, with 4-state generator buses.",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "name": "ieee118",
+    "version": "1.0.0",
+    "path": "datasets/ieee118/v1",
+    "summary": "IEEE 118-bus DC optimal power flow (DC-OPF) blackout model (Chan et al. 2024): 118 buses + 186 branches = 304 components, with 54 four-state generator buses.",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "name": "ieee300",
+    "version": "1.0.0",
+    "path": "datasets/ieee300/v1",
+    "summary": "IEEE 300-bus DC optimal power flow (DC-OPF) blackout model (Chan et al. 2024): 300 buses + 411 branches = 711 components, with 69 four-state generator buses.",
+    "license": "CC-BY-4.0"
+  }
 ]

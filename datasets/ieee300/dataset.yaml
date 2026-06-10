@@ -1,0 +1,44 @@
+name: ieee300
+version: 1.0.0
+title: IEEE 300-bus DC optimal power flow (DC-OPF) blackout model
+license: CC-BY-4.0
+description: >
+  IEEE 300-bus DC-OPF blackout model from Chan et al. (2024).
+  The system has 300 buses, 411 branches, and 69 generators — 711 failable
+  components in total. Each bus is represented as a virtual edge `vbusX`
+  connecting `busX` to `busX_int`, so bus failure is modelled as edge failure.
+  Component state definitions:
+    - 69 generator buses (4 states): 0=complete removal (p=0.01),
+      1=40% capacity (p=0.19), 2=80% capacity (p=0.30), 3=full capacity (p=0.50).
+    - 231 ordinary buses (2 states): 0=failed (p=0.01), 1=operational (p=0.99).
+    - 411 branches (2 states): 0=failed (p=0.01), 1=operational (p=0.99).
+  Blackout threshold is 26.1% (Scenario 1 in the reference).
+
+contacts:
+  - name: Ji-Eun Byun
+    affiliation: University of Glasgow
+    email: jieun.byun@glasgow.ac.uk
+  - name: Hyeuk Ryu
+    email: dynaryu@gmail.com
+
+tags: [power, IEEE, DC-OPF, blackout, network]
+
+files:
+  nodes: data/nodes.json
+  edges: data/edges.json
+  probs: data/probs.json
+  matpower_case: data/ieee300.m
+
+scripts:
+  - scripts/sfun_dcopt.py
+  - scripts/func_dcopt_py.py
+  - scripts/run_case300.py
+
+docs:
+  - docs/README.md
+  - docs/PROVENANCE.md
+  - docs/CHANGELOG.md
+
+citation: |
+  Byun, J.-E., Ryu, H., & Straub, D. (2024). Branch-and-bound algorithm for efficient
+  reliability analysis of general coherent systems. arXiv:2410.22363.

@@ -1,0 +1,3857 @@
+{
+    "vbus1": {
+        "from": "bus1",
+        "to": "bus1_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus2": {
+        "from": "bus2",
+        "to": "bus2_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus3": {
+        "from": "bus3",
+        "to": "bus3_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus4": {
+        "from": "bus4",
+        "to": "bus4_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus5": {
+        "from": "bus5",
+        "to": "bus5_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus6": {
+        "from": "bus6",
+        "to": "bus6_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus7": {
+        "from": "bus7",
+        "to": "bus7_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus8": {
+        "from": "bus8",
+        "to": "bus8_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus9": {
+        "from": "bus9",
+        "to": "bus9_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus10": {
+        "from": "bus10",
+        "to": "bus10_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus11": {
+        "from": "bus11",
+        "to": "bus11_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus12": {
+        "from": "bus12",
+        "to": "bus12_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus13": {
+        "from": "bus13",
+        "to": "bus13_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus14": {
+        "from": "bus14",
+        "to": "bus14_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus15": {
+        "from": "bus15",
+        "to": "bus15_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus16": {
+        "from": "bus16",
+        "to": "bus16_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus17": {
+        "from": "bus17",
+        "to": "bus17_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus19": {
+        "from": "bus19",
+        "to": "bus19_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus20": {
+        "from": "bus20",
+        "to": "bus20_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus21": {
+        "from": "bus21",
+        "to": "bus21_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus22": {
+        "from": "bus22",
+        "to": "bus22_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus23": {
+        "from": "bus23",
+        "to": "bus23_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus24": {
+        "from": "bus24",
+        "to": "bus24_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus25": {
+        "from": "bus25",
+        "to": "bus25_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus26": {
+        "from": "bus26",
+        "to": "bus26_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus27": {
+        "from": "bus27",
+        "to": "bus27_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus33": {
+        "from": "bus33",
+        "to": "bus33_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus34": {
+        "from": "bus34",
+        "to": "bus34_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus35": {
+        "from": "bus35",
+        "to": "bus35_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus36": {
+        "from": "bus36",
+        "to": "bus36_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus37": {
+        "from": "bus37",
+        "to": "bus37_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus38": {
+        "from": "bus38",
+        "to": "bus38_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus39": {
+        "from": "bus39",
+        "to": "bus39_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus40": {
+        "from": "bus40",
+        "to": "bus40_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus41": {
+        "from": "bus41",
+        "to": "bus41_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus42": {
+        "from": "bus42",
+        "to": "bus42_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus43": {
+        "from": "bus43",
+        "to": "bus43_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus44": {
+        "from": "bus44",
+        "to": "bus44_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus45": {
+        "from": "bus45",
+        "to": "bus45_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus46": {
+        "from": "bus46",
+        "to": "bus46_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus47": {
+        "from": "bus47",
+        "to": "bus47_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus48": {
+        "from": "bus48",
+        "to": "bus48_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus49": {
+        "from": "bus49",
+        "to": "bus49_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus51": {
+        "from": "bus51",
+        "to": "bus51_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus52": {
+        "from": "bus52",
+        "to": "bus52_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus53": {
+        "from": "bus53",
+        "to": "bus53_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus54": {
+        "from": "bus54",
+        "to": "bus54_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus55": {
+        "from": "bus55",
+        "to": "bus55_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus57": {
+        "from": "bus57",
+        "to": "bus57_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus58": {
+        "from": "bus58",
+        "to": "bus58_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus59": {
+        "from": "bus59",
+        "to": "bus59_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus60": {
+        "from": "bus60",
+        "to": "bus60_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus61": {
+        "from": "bus61",
+        "to": "bus61_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus62": {
+        "from": "bus62",
+        "to": "bus62_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus63": {
+        "from": "bus63",
+        "to": "bus63_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus64": {
+        "from": "bus64",
+        "to": "bus64_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus69": {
+        "from": "bus69",
+        "to": "bus69_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus70": {
+        "from": "bus70",
+        "to": "bus70_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus71": {
+        "from": "bus71",
+        "to": "bus71_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus72": {
+        "from": "bus72",
+        "to": "bus72_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus73": {
+        "from": "bus73",
+        "to": "bus73_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus74": {
+        "from": "bus74",
+        "to": "bus74_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus76": {
+        "from": "bus76",
+        "to": "bus76_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus77": {
+        "from": "bus77",
+        "to": "bus77_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus78": {
+        "from": "bus78",
+        "to": "bus78_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus79": {
+        "from": "bus79",
+        "to": "bus79_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus80": {
+        "from": "bus80",
+        "to": "bus80_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus81": {
+        "from": "bus81",
+        "to": "bus81_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus84": {
+        "from": "bus84",
+        "to": "bus84_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus85": {
+        "from": "bus85",
+        "to": "bus85_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus86": {
+        "from": "bus86",
+        "to": "bus86_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus87": {
+        "from": "bus87",
+        "to": "bus87_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus88": {
+        "from": "bus88",
+        "to": "bus88_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus89": {
+        "from": "bus89",
+        "to": "bus89_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus90": {
+        "from": "bus90",
+        "to": "bus90_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus91": {
+        "from": "bus91",
+        "to": "bus91_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus92": {
+        "from": "bus92",
+        "to": "bus92_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus94": {
+        "from": "bus94",
+        "to": "bus94_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus97": {
+        "from": "bus97",
+        "to": "bus97_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus98": {
+        "from": "bus98",
+        "to": "bus98_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus99": {
+        "from": "bus99",
+        "to": "bus99_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus100": {
+        "from": "bus100",
+        "to": "bus100_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus102": {
+        "from": "bus102",
+        "to": "bus102_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus103": {
+        "from": "bus103",
+        "to": "bus103_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus104": {
+        "from": "bus104",
+        "to": "bus104_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus105": {
+        "from": "bus105",
+        "to": "bus105_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus107": {
+        "from": "bus107",
+        "to": "bus107_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus108": {
+        "from": "bus108",
+        "to": "bus108_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus109": {
+        "from": "bus109",
+        "to": "bus109_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus110": {
+        "from": "bus110",
+        "to": "bus110_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus112": {
+        "from": "bus112",
+        "to": "bus112_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus113": {
+        "from": "bus113",
+        "to": "bus113_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus114": {
+        "from": "bus114",
+        "to": "bus114_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus115": {
+        "from": "bus115",
+        "to": "bus115_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus116": {
+        "from": "bus116",
+        "to": "bus116_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus117": {
+        "from": "bus117",
+        "to": "bus117_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus118": {
+        "from": "bus118",
+        "to": "bus118_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus119": {
+        "from": "bus119",
+        "to": "bus119_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus120": {
+        "from": "bus120",
+        "to": "bus120_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus121": {
+        "from": "bus121",
+        "to": "bus121_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus122": {
+        "from": "bus122",
+        "to": "bus122_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus123": {
+        "from": "bus123",
+        "to": "bus123_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus124": {
+        "from": "bus124",
+        "to": "bus124_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus125": {
+        "from": "bus125",
+        "to": "bus125_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus126": {
+        "from": "bus126",
+        "to": "bus126_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus127": {
+        "from": "bus127",
+        "to": "bus127_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus128": {
+        "from": "bus128",
+        "to": "bus128_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus129": {
+        "from": "bus129",
+        "to": "bus129_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus130": {
+        "from": "bus130",
+        "to": "bus130_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus131": {
+        "from": "bus131",
+        "to": "bus131_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus132": {
+        "from": "bus132",
+        "to": "bus132_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus133": {
+        "from": "bus133",
+        "to": "bus133_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus134": {
+        "from": "bus134",
+        "to": "bus134_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus135": {
+        "from": "bus135",
+        "to": "bus135_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus136": {
+        "from": "bus136",
+        "to": "bus136_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus137": {
+        "from": "bus137",
+        "to": "bus137_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus138": {
+        "from": "bus138",
+        "to": "bus138_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus139": {
+        "from": "bus139",
+        "to": "bus139_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus140": {
+        "from": "bus140",
+        "to": "bus140_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus141": {
+        "from": "bus141",
+        "to": "bus141_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus142": {
+        "from": "bus142",
+        "to": "bus142_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus143": {
+        "from": "bus143",
+        "to": "bus143_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus144": {
+        "from": "bus144",
+        "to": "bus144_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus145": {
+        "from": "bus145",
+        "to": "bus145_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus146": {
+        "from": "bus146",
+        "to": "bus146_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus147": {
+        "from": "bus147",
+        "to": "bus147_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus148": {
+        "from": "bus148",
+        "to": "bus148_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus149": {
+        "from": "bus149",
+        "to": "bus149_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus150": {
+        "from": "bus150",
+        "to": "bus150_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus151": {
+        "from": "bus151",
+        "to": "bus151_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus152": {
+        "from": "bus152",
+        "to": "bus152_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus153": {
+        "from": "bus153",
+        "to": "bus153_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus154": {
+        "from": "bus154",
+        "to": "bus154_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus155": {
+        "from": "bus155",
+        "to": "bus155_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus156": {
+        "from": "bus156",
+        "to": "bus156_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus157": {
+        "from": "bus157",
+        "to": "bus157_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus158": {
+        "from": "bus158",
+        "to": "bus158_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus159": {
+        "from": "bus159",
+        "to": "bus159_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus160": {
+        "from": "bus160",
+        "to": "bus160_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus161": {
+        "from": "bus161",
+        "to": "bus161_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus162": {
+        "from": "bus162",
+        "to": "bus162_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus163": {
+        "from": "bus163",
+        "to": "bus163_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus164": {
+        "from": "bus164",
+        "to": "bus164_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus165": {
+        "from": "bus165",
+        "to": "bus165_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus166": {
+        "from": "bus166",
+        "to": "bus166_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus167": {
+        "from": "bus167",
+        "to": "bus167_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus168": {
+        "from": "bus168",
+        "to": "bus168_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus169": {
+        "from": "bus169",
+        "to": "bus169_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus170": {
+        "from": "bus170",
+        "to": "bus170_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus171": {
+        "from": "bus171",
+        "to": "bus171_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus172": {
+        "from": "bus172",
+        "to": "bus172_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus173": {
+        "from": "bus173",
+        "to": "bus173_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus174": {
+        "from": "bus174",
+        "to": "bus174_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus175": {
+        "from": "bus175",
+        "to": "bus175_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus176": {
+        "from": "bus176",
+        "to": "bus176_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus177": {
+        "from": "bus177",
+        "to": "bus177_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus178": {
+        "from": "bus178",
+        "to": "bus178_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus179": {
+        "from": "bus179",
+        "to": "bus179_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus180": {
+        "from": "bus180",
+        "to": "bus180_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus181": {
+        "from": "bus181",
+        "to": "bus181_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus182": {
+        "from": "bus182",
+        "to": "bus182_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus183": {
+        "from": "bus183",
+        "to": "bus183_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus184": {
+        "from": "bus184",
+        "to": "bus184_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus185": {
+        "from": "bus185",
+        "to": "bus185_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus186": {
+        "from": "bus186",
+        "to": "bus186_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus187": {
+        "from": "bus187",
+        "to": "bus187_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus188": {
+        "from": "bus188",
+        "to": "bus188_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus189": {
+        "from": "bus189",
+        "to": "bus189_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus190": {
+        "from": "bus190",
+        "to": "bus190_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus191": {
+        "from": "bus191",
+        "to": "bus191_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus192": {
+        "from": "bus192",
+        "to": "bus192_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus193": {
+        "from": "bus193",
+        "to": "bus193_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus194": {
+        "from": "bus194",
+        "to": "bus194_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus195": {
+        "from": "bus195",
+        "to": "bus195_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus196": {
+        "from": "bus196",
+        "to": "bus196_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus197": {
+        "from": "bus197",
+        "to": "bus197_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus198": {
+        "from": "bus198",
+        "to": "bus198_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus199": {
+        "from": "bus199",
+        "to": "bus199_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus200": {
+        "from": "bus200",
+        "to": "bus200_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus201": {
+        "from": "bus201",
+        "to": "bus201_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus202": {
+        "from": "bus202",
+        "to": "bus202_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus203": {
+        "from": "bus203",
+        "to": "bus203_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus204": {
+        "from": "bus204",
+        "to": "bus204_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus205": {
+        "from": "bus205",
+        "to": "bus205_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus206": {
+        "from": "bus206",
+        "to": "bus206_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus207": {
+        "from": "bus207",
+        "to": "bus207_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus208": {
+        "from": "bus208",
+        "to": "bus208_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus209": {
+        "from": "bus209",
+        "to": "bus209_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus210": {
+        "from": "bus210",
+        "to": "bus210_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus211": {
+        "from": "bus211",
+        "to": "bus211_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus212": {
+        "from": "bus212",
+        "to": "bus212_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus213": {
+        "from": "bus213",
+        "to": "bus213_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus214": {
+        "from": "bus214",
+        "to": "bus214_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus215": {
+        "from": "bus215",
+        "to": "bus215_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus216": {
+        "from": "bus216",
+        "to": "bus216_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus217": {
+        "from": "bus217",
+        "to": "bus217_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus218": {
+        "from": "bus218",
+        "to": "bus218_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus219": {
+        "from": "bus219",
+        "to": "bus219_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus220": {
+        "from": "bus220",
+        "to": "bus220_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus221": {
+        "from": "bus221",
+        "to": "bus221_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus222": {
+        "from": "bus222",
+        "to": "bus222_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus223": {
+        "from": "bus223",
+        "to": "bus223_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus224": {
+        "from": "bus224",
+        "to": "bus224_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus225": {
+        "from": "bus225",
+        "to": "bus225_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus226": {
+        "from": "bus226",
+        "to": "bus226_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus227": {
+        "from": "bus227",
+        "to": "bus227_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus228": {
+        "from": "bus228",
+        "to": "bus228_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus229": {
+        "from": "bus229",
+        "to": "bus229_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus230": {
+        "from": "bus230",
+        "to": "bus230_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus231": {
+        "from": "bus231",
+        "to": "bus231_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus232": {
+        "from": "bus232",
+        "to": "bus232_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus233": {
+        "from": "bus233",
+        "to": "bus233_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus234": {
+        "from": "bus234",
+        "to": "bus234_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus235": {
+        "from": "bus235",
+        "to": "bus235_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus236": {
+        "from": "bus236",
+        "to": "bus236_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus237": {
+        "from": "bus237",
+        "to": "bus237_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus238": {
+        "from": "bus238",
+        "to": "bus238_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus239": {
+        "from": "bus239",
+        "to": "bus239_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus240": {
+        "from": "bus240",
+        "to": "bus240_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus241": {
+        "from": "bus241",
+        "to": "bus241_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus242": {
+        "from": "bus242",
+        "to": "bus242_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus243": {
+        "from": "bus243",
+        "to": "bus243_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus244": {
+        "from": "bus244",
+        "to": "bus244_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus245": {
+        "from": "bus245",
+        "to": "bus245_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus246": {
+        "from": "bus246",
+        "to": "bus246_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus247": {
+        "from": "bus247",
+        "to": "bus247_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus248": {
+        "from": "bus248",
+        "to": "bus248_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus249": {
+        "from": "bus249",
+        "to": "bus249_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus250": {
+        "from": "bus250",
+        "to": "bus250_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus281": {
+        "from": "bus281",
+        "to": "bus281_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus319": {
+        "from": "bus319",
+        "to": "bus319_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus320": {
+        "from": "bus320",
+        "to": "bus320_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus322": {
+        "from": "bus322",
+        "to": "bus322_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus323": {
+        "from": "bus323",
+        "to": "bus323_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus324": {
+        "from": "bus324",
+        "to": "bus324_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus526": {
+        "from": "bus526",
+        "to": "bus526_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus528": {
+        "from": "bus528",
+        "to": "bus528_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus531": {
+        "from": "bus531",
+        "to": "bus531_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus552": {
+        "from": "bus552",
+        "to": "bus552_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus562": {
+        "from": "bus562",
+        "to": "bus562_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus609": {
+        "from": "bus609",
+        "to": "bus609_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus664": {
+        "from": "bus664",
+        "to": "bus664_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus1190": {
+        "from": "bus1190",
+        "to": "bus1190_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus1200": {
+        "from": "bus1200",
+        "to": "bus1200_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus1201": {
+        "from": "bus1201",
+        "to": "bus1201_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus2040": {
+        "from": "bus2040",
+        "to": "bus2040_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus7001": {
+        "from": "bus7001",
+        "to": "bus7001_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7002": {
+        "from": "bus7002",
+        "to": "bus7002_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7003": {
+        "from": "bus7003",
+        "to": "bus7003_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7011": {
+        "from": "bus7011",
+        "to": "bus7011_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7012": {
+        "from": "bus7012",
+        "to": "bus7012_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7017": {
+        "from": "bus7017",
+        "to": "bus7017_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7023": {
+        "from": "bus7023",
+        "to": "bus7023_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7024": {
+        "from": "bus7024",
+        "to": "bus7024_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7039": {
+        "from": "bus7039",
+        "to": "bus7039_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7044": {
+        "from": "bus7044",
+        "to": "bus7044_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7049": {
+        "from": "bus7049",
+        "to": "bus7049_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7055": {
+        "from": "bus7055",
+        "to": "bus7055_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7057": {
+        "from": "bus7057",
+        "to": "bus7057_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7061": {
+        "from": "bus7061",
+        "to": "bus7061_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7062": {
+        "from": "bus7062",
+        "to": "bus7062_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7071": {
+        "from": "bus7071",
+        "to": "bus7071_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7130": {
+        "from": "bus7130",
+        "to": "bus7130_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7139": {
+        "from": "bus7139",
+        "to": "bus7139_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus7166": {
+        "from": "bus7166",
+        "to": "bus7166_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus9001": {
+        "from": "bus9001",
+        "to": "bus9001_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9002": {
+        "from": "bus9002",
+        "to": "bus9002_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus9003": {
+        "from": "bus9003",
+        "to": "bus9003_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9004": {
+        "from": "bus9004",
+        "to": "bus9004_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9005": {
+        "from": "bus9005",
+        "to": "bus9005_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9006": {
+        "from": "bus9006",
+        "to": "bus9006_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9007": {
+        "from": "bus9007",
+        "to": "bus9007_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9012": {
+        "from": "bus9012",
+        "to": "bus9012_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9021": {
+        "from": "bus9021",
+        "to": "bus9021_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9022": {
+        "from": "bus9022",
+        "to": "bus9022_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9023": {
+        "from": "bus9023",
+        "to": "bus9023_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9024": {
+        "from": "bus9024",
+        "to": "bus9024_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9025": {
+        "from": "bus9025",
+        "to": "bus9025_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9026": {
+        "from": "bus9026",
+        "to": "bus9026_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9031": {
+        "from": "bus9031",
+        "to": "bus9031_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9032": {
+        "from": "bus9032",
+        "to": "bus9032_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9033": {
+        "from": "bus9033",
+        "to": "bus9033_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9034": {
+        "from": "bus9034",
+        "to": "bus9034_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9035": {
+        "from": "bus9035",
+        "to": "bus9035_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9036": {
+        "from": "bus9036",
+        "to": "bus9036_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9037": {
+        "from": "bus9037",
+        "to": "bus9037_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9038": {
+        "from": "bus9038",
+        "to": "bus9038_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9041": {
+        "from": "bus9041",
+        "to": "bus9041_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9042": {
+        "from": "bus9042",
+        "to": "bus9042_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9043": {
+        "from": "bus9043",
+        "to": "bus9043_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9044": {
+        "from": "bus9044",
+        "to": "bus9044_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9051": {
+        "from": "bus9051",
+        "to": "bus9051_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus9052": {
+        "from": "bus9052",
+        "to": "bus9052_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9053": {
+        "from": "bus9053",
+        "to": "bus9053_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus9054": {
+        "from": "bus9054",
+        "to": "bus9054_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus9055": {
+        "from": "bus9055",
+        "to": "bus9055_int",
+        "directed": false,
+        "component_type": "generator_bus"
+    },
+    "vbus9071": {
+        "from": "bus9071",
+        "to": "bus9071_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9072": {
+        "from": "bus9072",
+        "to": "bus9072_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9121": {
+        "from": "bus9121",
+        "to": "bus9121_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "vbus9533": {
+        "from": "bus9533",
+        "to": "bus9533_int",
+        "directed": false,
+        "component_type": "ordinary_bus"
+    },
+    "br1": {
+        "from": "bus37_int",
+        "to": "bus9001_int",
+        "directed": false
+    },
+    "br2": {
+        "from": "bus9001_int",
+        "to": "bus9005_int",
+        "directed": false
+    },
+    "br3": {
+        "from": "bus9001_int",
+        "to": "bus9006_int",
+        "directed": false
+    },
+    "br4": {
+        "from": "bus9001_int",
+        "to": "bus9012_int",
+        "directed": false
+    },
+    "br5": {
+        "from": "bus9005_int",
+        "to": "bus9051_int",
+        "directed": false
+    },
+    "br6": {
+        "from": "bus9005_int",
+        "to": "bus9052_int",
+        "directed": false
+    },
+    "br7": {
+        "from": "bus9005_int",
+        "to": "bus9053_int",
+        "directed": false
+    },
+    "br8": {
+        "from": "bus9005_int",
+        "to": "bus9054_int",
+        "directed": false
+    },
+    "br9": {
+        "from": "bus9005_int",
+        "to": "bus9055_int",
+        "directed": false
+    },
+    "br10": {
+        "from": "bus9006_int",
+        "to": "bus9007_int",
+        "directed": false
+    },
+    "br11": {
+        "from": "bus9006_int",
+        "to": "bus9003_int",
+        "directed": false
+    },
+    "br12": {
+        "from": "bus9006_int",
+        "to": "bus9003_int",
+        "directed": false
+    },
+    "br13": {
+        "from": "bus9012_int",
+        "to": "bus9002_int",
+        "directed": false
+    },
+    "br14": {
+        "from": "bus9012_int",
+        "to": "bus9002_int",
+        "directed": false
+    },
+    "br15": {
+        "from": "bus9002_int",
+        "to": "bus9021_int",
+        "directed": false
+    },
+    "br16": {
+        "from": "bus9021_int",
+        "to": "bus9023_int",
+        "directed": false
+    },
+    "br17": {
+        "from": "bus9021_int",
+        "to": "bus9022_int",
+        "directed": false
+    },
+    "br18": {
+        "from": "bus9002_int",
+        "to": "bus9024_int",
+        "directed": false
+    },
+    "br19": {
+        "from": "bus9023_int",
+        "to": "bus9025_int",
+        "directed": false
+    },
+    "br20": {
+        "from": "bus9023_int",
+        "to": "bus9026_int",
+        "directed": false
+    },
+    "br21": {
+        "from": "bus9007_int",
+        "to": "bus9071_int",
+        "directed": false
+    },
+    "br22": {
+        "from": "bus9007_int",
+        "to": "bus9072_int",
+        "directed": false
+    },
+    "br23": {
+        "from": "bus9007_int",
+        "to": "bus9003_int",
+        "directed": false
+    },
+    "br24": {
+        "from": "bus9003_int",
+        "to": "bus9031_int",
+        "directed": false
+    },
+    "br25": {
+        "from": "bus9003_int",
+        "to": "bus9032_int",
+        "directed": false
+    },
+    "br26": {
+        "from": "bus9003_int",
+        "to": "bus9033_int",
+        "directed": false
+    },
+    "br27": {
+        "from": "bus9003_int",
+        "to": "bus9044_int",
+        "directed": false
+    },
+    "br28": {
+        "from": "bus9044_int",
+        "to": "bus9004_int",
+        "directed": false
+    },
+    "br29": {
+        "from": "bus9004_int",
+        "to": "bus9041_int",
+        "directed": false
+    },
+    "br30": {
+        "from": "bus9004_int",
+        "to": "bus9042_int",
+        "directed": false
+    },
+    "br31": {
+        "from": "bus9004_int",
+        "to": "bus9043_int",
+        "directed": false
+    },
+    "br32": {
+        "from": "bus9003_int",
+        "to": "bus9034_int",
+        "directed": false
+    },
+    "br33": {
+        "from": "bus9003_int",
+        "to": "bus9035_int",
+        "directed": false
+    },
+    "br34": {
+        "from": "bus9003_int",
+        "to": "bus9036_int",
+        "directed": false
+    },
+    "br35": {
+        "from": "bus9003_int",
+        "to": "bus9037_int",
+        "directed": false
+    },
+    "br36": {
+        "from": "bus9003_int",
+        "to": "bus9038_int",
+        "directed": false
+    },
+    "br37": {
+        "from": "bus9012_int",
+        "to": "bus9121_int",
+        "directed": false
+    },
+    "br38": {
+        "from": "bus9053_int",
+        "to": "bus9533_int",
+        "directed": false
+    },
+    "br39": {
+        "from": "bus1_int",
+        "to": "bus5_int",
+        "directed": false
+    },
+    "br40": {
+        "from": "bus2_int",
+        "to": "bus6_int",
+        "directed": false
+    },
+    "br41": {
+        "from": "bus2_int",
+        "to": "bus8_int",
+        "directed": false
+    },
+    "br42": {
+        "from": "bus3_int",
+        "to": "bus7_int",
+        "directed": false
+    },
+    "br43": {
+        "from": "bus3_int",
+        "to": "bus19_int",
+        "directed": false
+    },
+    "br44": {
+        "from": "bus3_int",
+        "to": "bus150_int",
+        "directed": false
+    },
+    "br45": {
+        "from": "bus4_int",
+        "to": "bus16_int",
+        "directed": false
+    },
+    "br46": {
+        "from": "bus5_int",
+        "to": "bus9_int",
+        "directed": false
+    },
+    "br47": {
+        "from": "bus7_int",
+        "to": "bus12_int",
+        "directed": false
+    },
+    "br48": {
+        "from": "bus7_int",
+        "to": "bus131_int",
+        "directed": false
+    },
+    "br49": {
+        "from": "bus8_int",
+        "to": "bus11_int",
+        "directed": false
+    },
+    "br50": {
+        "from": "bus8_int",
+        "to": "bus14_int",
+        "directed": false
+    },
+    "br51": {
+        "from": "bus9_int",
+        "to": "bus11_int",
+        "directed": false
+    },
+    "br52": {
+        "from": "bus11_int",
+        "to": "bus13_int",
+        "directed": false
+    },
+    "br53": {
+        "from": "bus12_int",
+        "to": "bus21_int",
+        "directed": false
+    },
+    "br54": {
+        "from": "bus13_int",
+        "to": "bus20_int",
+        "directed": false
+    },
+    "br55": {
+        "from": "bus14_int",
+        "to": "bus15_int",
+        "directed": false
+    },
+    "br56": {
+        "from": "bus15_int",
+        "to": "bus37_int",
+        "directed": false
+    },
+    "br57": {
+        "from": "bus15_int",
+        "to": "bus89_int",
+        "directed": false
+    },
+    "br58": {
+        "from": "bus15_int",
+        "to": "bus90_int",
+        "directed": false
+    },
+    "br59": {
+        "from": "bus16_int",
+        "to": "bus42_int",
+        "directed": false
+    },
+    "br60": {
+        "from": "bus19_int",
+        "to": "bus21_int",
+        "directed": false
+    },
+    "br61": {
+        "from": "bus19_int",
+        "to": "bus87_int",
+        "directed": false
+    },
+    "br62": {
+        "from": "bus20_int",
+        "to": "bus22_int",
+        "directed": false
+    },
+    "br63": {
+        "from": "bus20_int",
+        "to": "bus27_int",
+        "directed": false
+    },
+    "br64": {
+        "from": "bus21_int",
+        "to": "bus24_int",
+        "directed": false
+    },
+    "br65": {
+        "from": "bus22_int",
+        "to": "bus23_int",
+        "directed": false
+    },
+    "br66": {
+        "from": "bus23_int",
+        "to": "bus25_int",
+        "directed": false
+    },
+    "br67": {
+        "from": "bus24_int",
+        "to": "bus319_int",
+        "directed": false
+    },
+    "br68": {
+        "from": "bus25_int",
+        "to": "bus26_int",
+        "directed": false
+    },
+    "br69": {
+        "from": "bus26_int",
+        "to": "bus27_int",
+        "directed": false
+    },
+    "br70": {
+        "from": "bus26_int",
+        "to": "bus320_int",
+        "directed": false
+    },
+    "br71": {
+        "from": "bus33_int",
+        "to": "bus34_int",
+        "directed": false
+    },
+    "br72": {
+        "from": "bus33_int",
+        "to": "bus38_int",
+        "directed": false
+    },
+    "br73": {
+        "from": "bus33_int",
+        "to": "bus40_int",
+        "directed": false
+    },
+    "br74": {
+        "from": "bus33_int",
+        "to": "bus41_int",
+        "directed": false
+    },
+    "br75": {
+        "from": "bus34_int",
+        "to": "bus42_int",
+        "directed": false
+    },
+    "br76": {
+        "from": "bus35_int",
+        "to": "bus72_int",
+        "directed": false
+    },
+    "br77": {
+        "from": "bus35_int",
+        "to": "bus76_int",
+        "directed": false
+    },
+    "br78": {
+        "from": "bus35_int",
+        "to": "bus77_int",
+        "directed": false
+    },
+    "br79": {
+        "from": "bus36_int",
+        "to": "bus88_int",
+        "directed": false
+    },
+    "br80": {
+        "from": "bus37_int",
+        "to": "bus38_int",
+        "directed": false
+    },
+    "br81": {
+        "from": "bus37_int",
+        "to": "bus40_int",
+        "directed": false
+    },
+    "br82": {
+        "from": "bus37_int",
+        "to": "bus41_int",
+        "directed": false
+    },
+    "br83": {
+        "from": "bus37_int",
+        "to": "bus49_int",
+        "directed": false
+    },
+    "br84": {
+        "from": "bus37_int",
+        "to": "bus89_int",
+        "directed": false
+    },
+    "br85": {
+        "from": "bus37_int",
+        "to": "bus90_int",
+        "directed": false
+    },
+    "br86": {
+        "from": "bus38_int",
+        "to": "bus41_int",
+        "directed": false
+    },
+    "br87": {
+        "from": "bus38_int",
+        "to": "bus43_int",
+        "directed": false
+    },
+    "br88": {
+        "from": "bus39_int",
+        "to": "bus42_int",
+        "directed": false
+    },
+    "br89": {
+        "from": "bus40_int",
+        "to": "bus48_int",
+        "directed": false
+    },
+    "br90": {
+        "from": "bus41_int",
+        "to": "bus42_int",
+        "directed": false
+    },
+    "br91": {
+        "from": "bus41_int",
+        "to": "bus49_int",
+        "directed": false
+    },
+    "br92": {
+        "from": "bus41_int",
+        "to": "bus51_int",
+        "directed": false
+    },
+    "br93": {
+        "from": "bus42_int",
+        "to": "bus46_int",
+        "directed": false
+    },
+    "br94": {
+        "from": "bus43_int",
+        "to": "bus44_int",
+        "directed": false
+    },
+    "br95": {
+        "from": "bus43_int",
+        "to": "bus48_int",
+        "directed": false
+    },
+    "br96": {
+        "from": "bus43_int",
+        "to": "bus53_int",
+        "directed": false
+    },
+    "br97": {
+        "from": "bus44_int",
+        "to": "bus47_int",
+        "directed": false
+    },
+    "br98": {
+        "from": "bus44_int",
+        "to": "bus54_int",
+        "directed": false
+    },
+    "br99": {
+        "from": "bus45_int",
+        "to": "bus60_int",
+        "directed": false
+    },
+    "br100": {
+        "from": "bus45_int",
+        "to": "bus74_int",
+        "directed": false
+    },
+    "br101": {
+        "from": "bus46_int",
+        "to": "bus81_int",
+        "directed": false
+    },
+    "br102": {
+        "from": "bus47_int",
+        "to": "bus73_int",
+        "directed": false
+    },
+    "br103": {
+        "from": "bus47_int",
+        "to": "bus113_int",
+        "directed": false
+    },
+    "br104": {
+        "from": "bus48_int",
+        "to": "bus107_int",
+        "directed": false
+    },
+    "br105": {
+        "from": "bus49_int",
+        "to": "bus51_int",
+        "directed": false
+    },
+    "br106": {
+        "from": "bus51_int",
+        "to": "bus52_int",
+        "directed": false
+    },
+    "br107": {
+        "from": "bus52_int",
+        "to": "bus55_int",
+        "directed": false
+    },
+    "br108": {
+        "from": "bus53_int",
+        "to": "bus54_int",
+        "directed": false
+    },
+    "br109": {
+        "from": "bus54_int",
+        "to": "bus55_int",
+        "directed": false
+    },
+    "br110": {
+        "from": "bus55_int",
+        "to": "bus57_int",
+        "directed": false
+    },
+    "br111": {
+        "from": "bus57_int",
+        "to": "bus58_int",
+        "directed": false
+    },
+    "br112": {
+        "from": "bus57_int",
+        "to": "bus63_int",
+        "directed": false
+    },
+    "br113": {
+        "from": "bus58_int",
+        "to": "bus59_int",
+        "directed": false
+    },
+    "br114": {
+        "from": "bus59_int",
+        "to": "bus61_int",
+        "directed": false
+    },
+    "br115": {
+        "from": "bus60_int",
+        "to": "bus62_int",
+        "directed": false
+    },
+    "br116": {
+        "from": "bus62_int",
+        "to": "bus64_int",
+        "directed": false
+    },
+    "br117": {
+        "from": "bus62_int",
+        "to": "bus144_int",
+        "directed": false
+    },
+    "br118": {
+        "from": "bus63_int",
+        "to": "bus526_int",
+        "directed": false
+    },
+    "br119": {
+        "from": "bus69_int",
+        "to": "bus211_int",
+        "directed": false
+    },
+    "br120": {
+        "from": "bus69_int",
+        "to": "bus79_int",
+        "directed": false
+    },
+    "br121": {
+        "from": "bus70_int",
+        "to": "bus71_int",
+        "directed": false
+    },
+    "br122": {
+        "from": "bus70_int",
+        "to": "bus528_int",
+        "directed": false
+    },
+    "br123": {
+        "from": "bus71_int",
+        "to": "bus72_int",
+        "directed": false
+    },
+    "br124": {
+        "from": "bus71_int",
+        "to": "bus73_int",
+        "directed": false
+    },
+    "br125": {
+        "from": "bus72_int",
+        "to": "bus77_int",
+        "directed": false
+    },
+    "br126": {
+        "from": "bus72_int",
+        "to": "bus531_int",
+        "directed": false
+    },
+    "br127": {
+        "from": "bus73_int",
+        "to": "bus76_int",
+        "directed": false
+    },
+    "br128": {
+        "from": "bus73_int",
+        "to": "bus79_int",
+        "directed": false
+    },
+    "br129": {
+        "from": "bus74_int",
+        "to": "bus88_int",
+        "directed": false
+    },
+    "br130": {
+        "from": "bus74_int",
+        "to": "bus562_int",
+        "directed": false
+    },
+    "br131": {
+        "from": "bus76_int",
+        "to": "bus77_int",
+        "directed": false
+    },
+    "br132": {
+        "from": "bus77_int",
+        "to": "bus78_int",
+        "directed": false
+    },
+    "br133": {
+        "from": "bus77_int",
+        "to": "bus80_int",
+        "directed": false
+    },
+    "br134": {
+        "from": "bus77_int",
+        "to": "bus552_int",
+        "directed": false
+    },
+    "br135": {
+        "from": "bus77_int",
+        "to": "bus609_int",
+        "directed": false
+    },
+    "br136": {
+        "from": "bus78_int",
+        "to": "bus79_int",
+        "directed": false
+    },
+    "br137": {
+        "from": "bus78_int",
+        "to": "bus84_int",
+        "directed": false
+    },
+    "br138": {
+        "from": "bus79_int",
+        "to": "bus211_int",
+        "directed": false
+    },
+    "br139": {
+        "from": "bus80_int",
+        "to": "bus211_int",
+        "directed": false
+    },
+    "br140": {
+        "from": "bus81_int",
+        "to": "bus194_int",
+        "directed": false
+    },
+    "br141": {
+        "from": "bus81_int",
+        "to": "bus195_int",
+        "directed": false
+    },
+    "br142": {
+        "from": "bus85_int",
+        "to": "bus86_int",
+        "directed": false
+    },
+    "br143": {
+        "from": "bus86_int",
+        "to": "bus87_int",
+        "directed": false
+    },
+    "br144": {
+        "from": "bus86_int",
+        "to": "bus323_int",
+        "directed": false
+    },
+    "br145": {
+        "from": "bus89_int",
+        "to": "bus91_int",
+        "directed": false
+    },
+    "br146": {
+        "from": "bus90_int",
+        "to": "bus92_int",
+        "directed": false
+    },
+    "br147": {
+        "from": "bus91_int",
+        "to": "bus94_int",
+        "directed": false
+    },
+    "br148": {
+        "from": "bus91_int",
+        "to": "bus97_int",
+        "directed": false
+    },
+    "br149": {
+        "from": "bus92_int",
+        "to": "bus103_int",
+        "directed": false
+    },
+    "br150": {
+        "from": "bus92_int",
+        "to": "bus105_int",
+        "directed": false
+    },
+    "br151": {
+        "from": "bus94_int",
+        "to": "bus97_int",
+        "directed": false
+    },
+    "br152": {
+        "from": "bus97_int",
+        "to": "bus100_int",
+        "directed": false
+    },
+    "br153": {
+        "from": "bus97_int",
+        "to": "bus102_int",
+        "directed": false
+    },
+    "br154": {
+        "from": "bus97_int",
+        "to": "bus103_int",
+        "directed": false
+    },
+    "br155": {
+        "from": "bus98_int",
+        "to": "bus100_int",
+        "directed": false
+    },
+    "br156": {
+        "from": "bus98_int",
+        "to": "bus102_int",
+        "directed": false
+    },
+    "br157": {
+        "from": "bus99_int",
+        "to": "bus107_int",
+        "directed": false
+    },
+    "br158": {
+        "from": "bus99_int",
+        "to": "bus108_int",
+        "directed": false
+    },
+    "br159": {
+        "from": "bus99_int",
+        "to": "bus109_int",
+        "directed": false
+    },
+    "br160": {
+        "from": "bus99_int",
+        "to": "bus110_int",
+        "directed": false
+    },
+    "br161": {
+        "from": "bus100_int",
+        "to": "bus102_int",
+        "directed": false
+    },
+    "br162": {
+        "from": "bus102_int",
+        "to": "bus104_int",
+        "directed": false
+    },
+    "br163": {
+        "from": "bus103_int",
+        "to": "bus105_int",
+        "directed": false
+    },
+    "br164": {
+        "from": "bus104_int",
+        "to": "bus108_int",
+        "directed": false
+    },
+    "br165": {
+        "from": "bus104_int",
+        "to": "bus322_int",
+        "directed": false
+    },
+    "br166": {
+        "from": "bus105_int",
+        "to": "bus107_int",
+        "directed": false
+    },
+    "br167": {
+        "from": "bus105_int",
+        "to": "bus110_int",
+        "directed": false
+    },
+    "br168": {
+        "from": "bus108_int",
+        "to": "bus324_int",
+        "directed": false
+    },
+    "br169": {
+        "from": "bus109_int",
+        "to": "bus110_int",
+        "directed": false
+    },
+    "br170": {
+        "from": "bus109_int",
+        "to": "bus113_int",
+        "directed": false
+    },
+    "br171": {
+        "from": "bus109_int",
+        "to": "bus114_int",
+        "directed": false
+    },
+    "br172": {
+        "from": "bus110_int",
+        "to": "bus112_int",
+        "directed": false
+    },
+    "br173": {
+        "from": "bus112_int",
+        "to": "bus114_int",
+        "directed": false
+    },
+    "br174": {
+        "from": "bus115_int",
+        "to": "bus122_int",
+        "directed": false
+    },
+    "br175": {
+        "from": "bus116_int",
+        "to": "bus120_int",
+        "directed": false
+    },
+    "br176": {
+        "from": "bus117_int",
+        "to": "bus118_int",
+        "directed": false
+    },
+    "br177": {
+        "from": "bus118_int",
+        "to": "bus119_int",
+        "directed": false
+    },
+    "br178": {
+        "from": "bus118_int",
+        "to": "bus1201_int",
+        "directed": false
+    },
+    "br179": {
+        "from": "bus1201_int",
+        "to": "bus120_int",
+        "directed": false
+    },
+    "br180": {
+        "from": "bus118_int",
+        "to": "bus121_int",
+        "directed": false
+    },
+    "br181": {
+        "from": "bus119_int",
+        "to": "bus120_int",
+        "directed": false
+    },
+    "br182": {
+        "from": "bus119_int",
+        "to": "bus121_int",
+        "directed": false
+    },
+    "br183": {
+        "from": "bus122_int",
+        "to": "bus123_int",
+        "directed": false
+    },
+    "br184": {
+        "from": "bus122_int",
+        "to": "bus125_int",
+        "directed": false
+    },
+    "br185": {
+        "from": "bus123_int",
+        "to": "bus124_int",
+        "directed": false
+    },
+    "br186": {
+        "from": "bus123_int",
+        "to": "bus125_int",
+        "directed": false
+    },
+    "br187": {
+        "from": "bus125_int",
+        "to": "bus126_int",
+        "directed": false
+    },
+    "br188": {
+        "from": "bus126_int",
+        "to": "bus127_int",
+        "directed": false
+    },
+    "br189": {
+        "from": "bus126_int",
+        "to": "bus129_int",
+        "directed": false
+    },
+    "br190": {
+        "from": "bus126_int",
+        "to": "bus132_int",
+        "directed": false
+    },
+    "br191": {
+        "from": "bus126_int",
+        "to": "bus157_int",
+        "directed": false
+    },
+    "br192": {
+        "from": "bus126_int",
+        "to": "bus158_int",
+        "directed": false
+    },
+    "br193": {
+        "from": "bus126_int",
+        "to": "bus169_int",
+        "directed": false
+    },
+    "br194": {
+        "from": "bus127_int",
+        "to": "bus128_int",
+        "directed": false
+    },
+    "br195": {
+        "from": "bus127_int",
+        "to": "bus134_int",
+        "directed": false
+    },
+    "br196": {
+        "from": "bus127_int",
+        "to": "bus168_int",
+        "directed": false
+    },
+    "br197": {
+        "from": "bus128_int",
+        "to": "bus130_int",
+        "directed": false
+    },
+    "br198": {
+        "from": "bus128_int",
+        "to": "bus133_int",
+        "directed": false
+    },
+    "br199": {
+        "from": "bus129_int",
+        "to": "bus130_int",
+        "directed": false
+    },
+    "br200": {
+        "from": "bus129_int",
+        "to": "bus133_int",
+        "directed": false
+    },
+    "br201": {
+        "from": "bus130_int",
+        "to": "bus132_int",
+        "directed": false
+    },
+    "br202": {
+        "from": "bus130_int",
+        "to": "bus151_int",
+        "directed": false
+    },
+    "br203": {
+        "from": "bus130_int",
+        "to": "bus167_int",
+        "directed": false
+    },
+    "br204": {
+        "from": "bus130_int",
+        "to": "bus168_int",
+        "directed": false
+    },
+    "br205": {
+        "from": "bus133_int",
+        "to": "bus137_int",
+        "directed": false
+    },
+    "br206": {
+        "from": "bus133_int",
+        "to": "bus168_int",
+        "directed": false
+    },
+    "br207": {
+        "from": "bus133_int",
+        "to": "bus169_int",
+        "directed": false
+    },
+    "br208": {
+        "from": "bus133_int",
+        "to": "bus171_int",
+        "directed": false
+    },
+    "br209": {
+        "from": "bus134_int",
+        "to": "bus135_int",
+        "directed": false
+    },
+    "br210": {
+        "from": "bus134_int",
+        "to": "bus184_int",
+        "directed": false
+    },
+    "br211": {
+        "from": "bus135_int",
+        "to": "bus136_int",
+        "directed": false
+    },
+    "br212": {
+        "from": "bus136_int",
+        "to": "bus137_int",
+        "directed": false
+    },
+    "br213": {
+        "from": "bus136_int",
+        "to": "bus152_int",
+        "directed": false
+    },
+    "br214": {
+        "from": "bus137_int",
+        "to": "bus140_int",
+        "directed": false
+    },
+    "br215": {
+        "from": "bus137_int",
+        "to": "bus181_int",
+        "directed": false
+    },
+    "br216": {
+        "from": "bus137_int",
+        "to": "bus186_int",
+        "directed": false
+    },
+    "br217": {
+        "from": "bus137_int",
+        "to": "bus188_int",
+        "directed": false
+    },
+    "br218": {
+        "from": "bus139_int",
+        "to": "bus172_int",
+        "directed": false
+    },
+    "br219": {
+        "from": "bus140_int",
+        "to": "bus141_int",
+        "directed": false
+    },
+    "br220": {
+        "from": "bus140_int",
+        "to": "bus142_int",
+        "directed": false
+    },
+    "br221": {
+        "from": "bus140_int",
+        "to": "bus145_int",
+        "directed": false
+    },
+    "br222": {
+        "from": "bus140_int",
+        "to": "bus146_int",
+        "directed": false
+    },
+    "br223": {
+        "from": "bus140_int",
+        "to": "bus147_int",
+        "directed": false
+    },
+    "br224": {
+        "from": "bus140_int",
+        "to": "bus182_int",
+        "directed": false
+    },
+    "br225": {
+        "from": "bus141_int",
+        "to": "bus146_int",
+        "directed": false
+    },
+    "br226": {
+        "from": "bus142_int",
+        "to": "bus143_int",
+        "directed": false
+    },
+    "br227": {
+        "from": "bus143_int",
+        "to": "bus145_int",
+        "directed": false
+    },
+    "br228": {
+        "from": "bus143_int",
+        "to": "bus149_int",
+        "directed": false
+    },
+    "br229": {
+        "from": "bus145_int",
+        "to": "bus146_int",
+        "directed": false
+    },
+    "br230": {
+        "from": "bus145_int",
+        "to": "bus149_int",
+        "directed": false
+    },
+    "br231": {
+        "from": "bus146_int",
+        "to": "bus147_int",
+        "directed": false
+    },
+    "br232": {
+        "from": "bus148_int",
+        "to": "bus178_int",
+        "directed": false
+    },
+    "br233": {
+        "from": "bus148_int",
+        "to": "bus179_int",
+        "directed": false
+    },
+    "br234": {
+        "from": "bus152_int",
+        "to": "bus153_int",
+        "directed": false
+    },
+    "br235": {
+        "from": "bus153_int",
+        "to": "bus161_int",
+        "directed": false
+    },
+    "br236": {
+        "from": "bus154_int",
+        "to": "bus156_int",
+        "directed": false
+    },
+    "br237": {
+        "from": "bus154_int",
+        "to": "bus183_int",
+        "directed": false
+    },
+    "br238": {
+        "from": "bus155_int",
+        "to": "bus161_int",
+        "directed": false
+    },
+    "br239": {
+        "from": "bus157_int",
+        "to": "bus159_int",
+        "directed": false
+    },
+    "br240": {
+        "from": "bus158_int",
+        "to": "bus159_int",
+        "directed": false
+    },
+    "br241": {
+        "from": "bus158_int",
+        "to": "bus160_int",
+        "directed": false
+    },
+    "br242": {
+        "from": "bus162_int",
+        "to": "bus164_int",
+        "directed": false
+    },
+    "br243": {
+        "from": "bus162_int",
+        "to": "bus165_int",
+        "directed": false
+    },
+    "br244": {
+        "from": "bus163_int",
+        "to": "bus164_int",
+        "directed": false
+    },
+    "br245": {
+        "from": "bus165_int",
+        "to": "bus166_int",
+        "directed": false
+    },
+    "br246": {
+        "from": "bus167_int",
+        "to": "bus169_int",
+        "directed": false
+    },
+    "br247": {
+        "from": "bus172_int",
+        "to": "bus173_int",
+        "directed": false
+    },
+    "br248": {
+        "from": "bus172_int",
+        "to": "bus174_int",
+        "directed": false
+    },
+    "br249": {
+        "from": "bus173_int",
+        "to": "bus174_int",
+        "directed": false
+    },
+    "br250": {
+        "from": "bus173_int",
+        "to": "bus175_int",
+        "directed": false
+    },
+    "br251": {
+        "from": "bus173_int",
+        "to": "bus176_int",
+        "directed": false
+    },
+    "br252": {
+        "from": "bus175_int",
+        "to": "bus176_int",
+        "directed": false
+    },
+    "br253": {
+        "from": "bus175_int",
+        "to": "bus179_int",
+        "directed": false
+    },
+    "br254": {
+        "from": "bus176_int",
+        "to": "bus177_int",
+        "directed": false
+    },
+    "br255": {
+        "from": "bus177_int",
+        "to": "bus178_int",
+        "directed": false
+    },
+    "br256": {
+        "from": "bus178_int",
+        "to": "bus179_int",
+        "directed": false
+    },
+    "br257": {
+        "from": "bus178_int",
+        "to": "bus180_int",
+        "directed": false
+    },
+    "br258": {
+        "from": "bus181_int",
+        "to": "bus138_int",
+        "directed": false
+    },
+    "br259": {
+        "from": "bus181_int",
+        "to": "bus187_int",
+        "directed": false
+    },
+    "br260": {
+        "from": "bus184_int",
+        "to": "bus185_int",
+        "directed": false
+    },
+    "br261": {
+        "from": "bus186_int",
+        "to": "bus188_int",
+        "directed": false
+    },
+    "br262": {
+        "from": "bus187_int",
+        "to": "bus188_int",
+        "directed": false
+    },
+    "br263": {
+        "from": "bus188_int",
+        "to": "bus138_int",
+        "directed": false
+    },
+    "br264": {
+        "from": "bus189_int",
+        "to": "bus208_int",
+        "directed": false
+    },
+    "br265": {
+        "from": "bus189_int",
+        "to": "bus209_int",
+        "directed": false
+    },
+    "br266": {
+        "from": "bus190_int",
+        "to": "bus231_int",
+        "directed": false
+    },
+    "br267": {
+        "from": "bus190_int",
+        "to": "bus240_int",
+        "directed": false
+    },
+    "br268": {
+        "from": "bus191_int",
+        "to": "bus192_int",
+        "directed": false
+    },
+    "br269": {
+        "from": "bus192_int",
+        "to": "bus225_int",
+        "directed": false
+    },
+    "br270": {
+        "from": "bus193_int",
+        "to": "bus205_int",
+        "directed": false
+    },
+    "br271": {
+        "from": "bus193_int",
+        "to": "bus208_int",
+        "directed": false
+    },
+    "br272": {
+        "from": "bus194_int",
+        "to": "bus219_int",
+        "directed": false
+    },
+    "br273": {
+        "from": "bus194_int",
+        "to": "bus664_int",
+        "directed": false
+    },
+    "br274": {
+        "from": "bus195_int",
+        "to": "bus219_int",
+        "directed": false
+    },
+    "br275": {
+        "from": "bus196_int",
+        "to": "bus197_int",
+        "directed": false
+    },
+    "br276": {
+        "from": "bus196_int",
+        "to": "bus210_int",
+        "directed": false
+    },
+    "br277": {
+        "from": "bus197_int",
+        "to": "bus198_int",
+        "directed": false
+    },
+    "br278": {
+        "from": "bus197_int",
+        "to": "bus211_int",
+        "directed": false
+    },
+    "br279": {
+        "from": "bus198_int",
+        "to": "bus202_int",
+        "directed": false
+    },
+    "br280": {
+        "from": "bus198_int",
+        "to": "bus203_int",
+        "directed": false
+    },
+    "br281": {
+        "from": "bus198_int",
+        "to": "bus210_int",
+        "directed": false
+    },
+    "br282": {
+        "from": "bus198_int",
+        "to": "bus211_int",
+        "directed": false
+    },
+    "br283": {
+        "from": "bus199_int",
+        "to": "bus200_int",
+        "directed": false
+    },
+    "br284": {
+        "from": "bus199_int",
+        "to": "bus210_int",
+        "directed": false
+    },
+    "br285": {
+        "from": "bus200_int",
+        "to": "bus210_int",
+        "directed": false
+    },
+    "br286": {
+        "from": "bus201_int",
+        "to": "bus204_int",
+        "directed": false
+    },
+    "br287": {
+        "from": "bus203_int",
+        "to": "bus211_int",
+        "directed": false
+    },
+    "br288": {
+        "from": "bus204_int",
+        "to": "bus205_int",
+        "directed": false
+    },
+    "br289": {
+        "from": "bus205_int",
+        "to": "bus206_int",
+        "directed": false
+    },
+    "br290": {
+        "from": "bus206_int",
+        "to": "bus207_int",
+        "directed": false
+    },
+    "br291": {
+        "from": "bus206_int",
+        "to": "bus208_int",
+        "directed": false
+    },
+    "br292": {
+        "from": "bus212_int",
+        "to": "bus215_int",
+        "directed": false
+    },
+    "br293": {
+        "from": "bus213_int",
+        "to": "bus214_int",
+        "directed": false
+    },
+    "br294": {
+        "from": "bus214_int",
+        "to": "bus215_int",
+        "directed": false
+    },
+    "br295": {
+        "from": "bus214_int",
+        "to": "bus242_int",
+        "directed": false
+    },
+    "br296": {
+        "from": "bus215_int",
+        "to": "bus216_int",
+        "directed": false
+    },
+    "br297": {
+        "from": "bus216_int",
+        "to": "bus217_int",
+        "directed": false
+    },
+    "br298": {
+        "from": "bus217_int",
+        "to": "bus218_int",
+        "directed": false
+    },
+    "br299": {
+        "from": "bus217_int",
+        "to": "bus219_int",
+        "directed": false
+    },
+    "br300": {
+        "from": "bus217_int",
+        "to": "bus220_int",
+        "directed": false
+    },
+    "br301": {
+        "from": "bus219_int",
+        "to": "bus237_int",
+        "directed": false
+    },
+    "br302": {
+        "from": "bus220_int",
+        "to": "bus218_int",
+        "directed": false
+    },
+    "br303": {
+        "from": "bus220_int",
+        "to": "bus221_int",
+        "directed": false
+    },
+    "br304": {
+        "from": "bus220_int",
+        "to": "bus238_int",
+        "directed": false
+    },
+    "br305": {
+        "from": "bus221_int",
+        "to": "bus223_int",
+        "directed": false
+    },
+    "br306": {
+        "from": "bus222_int",
+        "to": "bus237_int",
+        "directed": false
+    },
+    "br307": {
+        "from": "bus224_int",
+        "to": "bus225_int",
+        "directed": false
+    },
+    "br308": {
+        "from": "bus224_int",
+        "to": "bus226_int",
+        "directed": false
+    },
+    "br309": {
+        "from": "bus225_int",
+        "to": "bus191_int",
+        "directed": false
+    },
+    "br310": {
+        "from": "bus226_int",
+        "to": "bus231_int",
+        "directed": false
+    },
+    "br311": {
+        "from": "bus227_int",
+        "to": "bus231_int",
+        "directed": false
+    },
+    "br312": {
+        "from": "bus228_int",
+        "to": "bus229_int",
+        "directed": false
+    },
+    "br313": {
+        "from": "bus228_int",
+        "to": "bus231_int",
+        "directed": false
+    },
+    "br314": {
+        "from": "bus228_int",
+        "to": "bus234_int",
+        "directed": false
+    },
+    "br315": {
+        "from": "bus229_int",
+        "to": "bus190_int",
+        "directed": false
+    },
+    "br316": {
+        "from": "bus231_int",
+        "to": "bus232_int",
+        "directed": false
+    },
+    "br317": {
+        "from": "bus231_int",
+        "to": "bus237_int",
+        "directed": false
+    },
+    "br318": {
+        "from": "bus232_int",
+        "to": "bus233_int",
+        "directed": false
+    },
+    "br319": {
+        "from": "bus234_int",
+        "to": "bus235_int",
+        "directed": false
+    },
+    "br320": {
+        "from": "bus234_int",
+        "to": "bus237_int",
+        "directed": false
+    },
+    "br321": {
+        "from": "bus235_int",
+        "to": "bus238_int",
+        "directed": false
+    },
+    "br322": {
+        "from": "bus241_int",
+        "to": "bus237_int",
+        "directed": false
+    },
+    "br323": {
+        "from": "bus240_int",
+        "to": "bus281_int",
+        "directed": false
+    },
+    "br324": {
+        "from": "bus242_int",
+        "to": "bus245_int",
+        "directed": false
+    },
+    "br325": {
+        "from": "bus242_int",
+        "to": "bus247_int",
+        "directed": false
+    },
+    "br326": {
+        "from": "bus243_int",
+        "to": "bus244_int",
+        "directed": false
+    },
+    "br327": {
+        "from": "bus243_int",
+        "to": "bus245_int",
+        "directed": false
+    },
+    "br328": {
+        "from": "bus244_int",
+        "to": "bus246_int",
+        "directed": false
+    },
+    "br329": {
+        "from": "bus245_int",
+        "to": "bus246_int",
+        "directed": false
+    },
+    "br330": {
+        "from": "bus245_int",
+        "to": "bus247_int",
+        "directed": false
+    },
+    "br331": {
+        "from": "bus246_int",
+        "to": "bus247_int",
+        "directed": false
+    },
+    "br332": {
+        "from": "bus247_int",
+        "to": "bus248_int",
+        "directed": false
+    },
+    "br333": {
+        "from": "bus248_int",
+        "to": "bus249_int",
+        "directed": false
+    },
+    "br334": {
+        "from": "bus249_int",
+        "to": "bus250_int",
+        "directed": false
+    },
+    "br335": {
+        "from": "bus3_int",
+        "to": "bus1_int",
+        "directed": false
+    },
+    "br336": {
+        "from": "bus3_int",
+        "to": "bus2_int",
+        "directed": false
+    },
+    "br337": {
+        "from": "bus3_int",
+        "to": "bus4_int",
+        "directed": false
+    },
+    "br338": {
+        "from": "bus7_int",
+        "to": "bus5_int",
+        "directed": false
+    },
+    "br339": {
+        "from": "bus7_int",
+        "to": "bus6_int",
+        "directed": false
+    },
+    "br340": {
+        "from": "bus10_int",
+        "to": "bus11_int",
+        "directed": false
+    },
+    "br341": {
+        "from": "bus12_int",
+        "to": "bus10_int",
+        "directed": false
+    },
+    "br342": {
+        "from": "bus15_int",
+        "to": "bus17_int",
+        "directed": false
+    },
+    "br343": {
+        "from": "bus16_int",
+        "to": "bus15_int",
+        "directed": false
+    },
+    "br344": {
+        "from": "bus21_int",
+        "to": "bus20_int",
+        "directed": false
+    },
+    "br345": {
+        "from": "bus24_int",
+        "to": "bus23_int",
+        "directed": false
+    },
+    "br346": {
+        "from": "bus36_int",
+        "to": "bus35_int",
+        "directed": false
+    },
+    "br347": {
+        "from": "bus45_int",
+        "to": "bus44_int",
+        "directed": false
+    },
+    "br348": {
+        "from": "bus45_int",
+        "to": "bus46_int",
+        "directed": false
+    },
+    "br349": {
+        "from": "bus62_int",
+        "to": "bus61_int",
+        "directed": false
+    },
+    "br350": {
+        "from": "bus63_int",
+        "to": "bus64_int",
+        "directed": false
+    },
+    "br351": {
+        "from": "bus73_int",
+        "to": "bus74_int",
+        "directed": false
+    },
+    "br352": {
+        "from": "bus81_int",
+        "to": "bus88_int",
+        "directed": false
+    },
+    "br353": {
+        "from": "bus85_int",
+        "to": "bus99_int",
+        "directed": false
+    },
+    "br354": {
+        "from": "bus86_int",
+        "to": "bus102_int",
+        "directed": false
+    },
+    "br355": {
+        "from": "bus87_int",
+        "to": "bus94_int",
+        "directed": false
+    },
+    "br356": {
+        "from": "bus114_int",
+        "to": "bus207_int",
+        "directed": false
+    },
+    "br357": {
+        "from": "bus116_int",
+        "to": "bus124_int",
+        "directed": false
+    },
+    "br358": {
+        "from": "bus121_int",
+        "to": "bus115_int",
+        "directed": false
+    },
+    "br359": {
+        "from": "bus122_int",
+        "to": "bus157_int",
+        "directed": false
+    },
+    "br360": {
+        "from": "bus130_int",
+        "to": "bus131_int",
+        "directed": false
+    },
+    "br361": {
+        "from": "bus130_int",
+        "to": "bus150_int",
+        "directed": false
+    },
+    "br362": {
+        "from": "bus132_int",
+        "to": "bus170_int",
+        "directed": false
+    },
+    "br363": {
+        "from": "bus141_int",
+        "to": "bus174_int",
+        "directed": false
+    },
+    "br364": {
+        "from": "bus142_int",
+        "to": "bus175_int",
+        "directed": false
+    },
+    "br365": {
+        "from": "bus143_int",
+        "to": "bus144_int",
+        "directed": false
+    },
+    "br366": {
+        "from": "bus143_int",
+        "to": "bus148_int",
+        "directed": false
+    },
+    "br367": {
+        "from": "bus145_int",
+        "to": "bus180_int",
+        "directed": false
+    },
+    "br368": {
+        "from": "bus151_int",
+        "to": "bus170_int",
+        "directed": false
+    },
+    "br369": {
+        "from": "bus153_int",
+        "to": "bus183_int",
+        "directed": false
+    },
+    "br370": {
+        "from": "bus155_int",
+        "to": "bus156_int",
+        "directed": false
+    },
+    "br371": {
+        "from": "bus159_int",
+        "to": "bus117_int",
+        "directed": false
+    },
+    "br372": {
+        "from": "bus160_int",
+        "to": "bus124_int",
+        "directed": false
+    },
+    "br373": {
+        "from": "bus163_int",
+        "to": "bus137_int",
+        "directed": false
+    },
+    "br374": {
+        "from": "bus164_int",
+        "to": "bus155_int",
+        "directed": false
+    },
+    "br375": {
+        "from": "bus182_int",
+        "to": "bus139_int",
+        "directed": false
+    },
+    "br376": {
+        "from": "bus189_int",
+        "to": "bus210_int",
+        "directed": false
+    },
+    "br377": {
+        "from": "bus193_int",
+        "to": "bus196_int",
+        "directed": false
+    },
+    "br378": {
+        "from": "bus195_int",
+        "to": "bus212_int",
+        "directed": false
+    },
+    "br379": {
+        "from": "bus200_int",
+        "to": "bus248_int",
+        "directed": false
+    },
+    "br380": {
+        "from": "bus201_int",
+        "to": "bus69_int",
+        "directed": false
+    },
+    "br381": {
+        "from": "bus202_int",
+        "to": "bus211_int",
+        "directed": false
+    },
+    "br382": {
+        "from": "bus204_int",
+        "to": "bus2040_int",
+        "directed": false
+    },
+    "br383": {
+        "from": "bus209_int",
+        "to": "bus198_int",
+        "directed": false
+    },
+    "br384": {
+        "from": "bus211_int",
+        "to": "bus212_int",
+        "directed": false
+    },
+    "br385": {
+        "from": "bus218_int",
+        "to": "bus219_int",
+        "directed": false
+    },
+    "br386": {
+        "from": "bus223_int",
+        "to": "bus224_int",
+        "directed": false
+    },
+    "br387": {
+        "from": "bus229_int",
+        "to": "bus230_int",
+        "directed": false
+    },
+    "br388": {
+        "from": "bus234_int",
+        "to": "bus236_int",
+        "directed": false
+    },
+    "br389": {
+        "from": "bus238_int",
+        "to": "bus239_int",
+        "directed": false
+    },
+    "br390": {
+        "from": "bus196_int",
+        "to": "bus2040_int",
+        "directed": false
+    },
+    "br391": {
+        "from": "bus119_int",
+        "to": "bus1190_int",
+        "directed": false
+    },
+    "br392": {
+        "from": "bus120_int",
+        "to": "bus1200_int",
+        "directed": false
+    },
+    "br393": {
+        "from": "bus7002_int",
+        "to": "bus2_int",
+        "directed": false
+    },
+    "br394": {
+        "from": "bus7003_int",
+        "to": "bus3_int",
+        "directed": false
+    },
+    "br395": {
+        "from": "bus7061_int",
+        "to": "bus61_int",
+        "directed": false
+    },
+    "br396": {
+        "from": "bus7062_int",
+        "to": "bus62_int",
+        "directed": false
+    },
+    "br397": {
+        "from": "bus7166_int",
+        "to": "bus166_int",
+        "directed": false
+    },
+    "br398": {
+        "from": "bus7024_int",
+        "to": "bus24_int",
+        "directed": false
+    },
+    "br399": {
+        "from": "bus7001_int",
+        "to": "bus1_int",
+        "directed": false
+    },
+    "br400": {
+        "from": "bus7130_int",
+        "to": "bus130_int",
+        "directed": false
+    },
+    "br401": {
+        "from": "bus7011_int",
+        "to": "bus11_int",
+        "directed": false
+    },
+    "br402": {
+        "from": "bus7023_int",
+        "to": "bus23_int",
+        "directed": false
+    },
+    "br403": {
+        "from": "bus7049_int",
+        "to": "bus49_int",
+        "directed": false
+    },
+    "br404": {
+        "from": "bus7139_int",
+        "to": "bus139_int",
+        "directed": false
+    },
+    "br405": {
+        "from": "bus7012_int",
+        "to": "bus12_int",
+        "directed": false
+    },
+    "br406": {
+        "from": "bus7017_int",
+        "to": "bus17_int",
+        "directed": false
+    },
+    "br407": {
+        "from": "bus7039_int",
+        "to": "bus39_int",
+        "directed": false
+    },
+    "br408": {
+        "from": "bus7057_int",
+        "to": "bus57_int",
+        "directed": false
+    },
+    "br409": {
+        "from": "bus7044_int",
+        "to": "bus44_int",
+        "directed": false
+    },
+    "br410": {
+        "from": "bus7055_int",
+        "to": "bus55_int",
+        "directed": false
+    },
+    "br411": {
+        "from": "bus7071_int",
+        "to": "bus71_int",
+        "directed": false
+    }
+}
