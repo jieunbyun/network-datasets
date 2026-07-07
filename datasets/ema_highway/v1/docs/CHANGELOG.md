@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+- Added `scripts/draw_graph_edge_ids.py`: standalone plot of the network with
+  edge-ID labels (matplotlib only, no Graphviz; positions from `nodes.json`).
+
 ## v1.0.0 (2025-09-17)
 - Initial release.
 - Added:
