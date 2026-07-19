@@ -54,5 +54,30 @@ edges = json.loads((root / "edges.json").read_text("utf-8"))
 probs = json.loads((root / "probs.json").read_text("utf-8"))  # if used
 ```
 
+## Scripts
+- `scripts/draw_graph_edge_ids.py`  
+  Draws the network with **edge-ID labels** (rather than node IDs) and saves it as a PNG.
+  Standalone: requires only the Python standard library and matplotlib (already a core
+  dependency of ndtools-duco) — no Graphviz installation. Node positions are taken
+  directly from the x/y coordinates in `nodes.json`, and a collision-avoidance pass
+  keeps labels readable in dense areas. Labels are bold bare numbers (`44` for edge
+  `e0044`) to save space.
+  ```bash
+  # from the repo root; writes data/graph_edge_ids.png by default
+  python datasets/ema_highway/v1/scripts/draw_graph_edge_ids.py
+
+  # options
+  python datasets/ema_highway/v1/scripts/draw_graph_edge_ids.py \
+      --full-ids           # label edges e044 instead of bare numbers (44)
+      --highlight n22 n66  # fill given nodes in blue (e.g., origin/destination)
+      --fontsize 10        # edge label font size in pt (default 10)
+      --figsize 16         # figure width/height in inches (default 16)
+      --data-dir DIR       # directory containing nodes.json / edges.json
+      --out FILE           # output path; extension picks the format
+  ```
+  The output format follows the `--out` extension: `.png` (raster), or `.svg` /
+  `.pdf` for vector output. SVG keeps the labels as editable text (e.g., for
+  post-editing in Inkscape).
+
 ## Notes
 - Coordinates in `nodes.json` are planar coordinates in kilometres (not geodetic).
