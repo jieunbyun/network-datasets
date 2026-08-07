@@ -33,6 +33,13 @@ DC-OPF system-function script (`sfun_dcopt.py`, `func_dcopt_py.py`,
 mirrored here from the TSUM demo repository
 (`tsum/demos/case14`).
 
+The `capacity` and `demand` attributes of `nodes.json` are derived from
+`data/ieee14.m` rather than authored independently: `capacity` is the sum of
+`PMAX` over the bus's rows in `mpc.gen`, and `demand` is the `PD` column of
+`mpc.bus`. They are a convenience for graph-level tooling — the case file
+remains authoritative, and the DC-OPF scripts read it directly without
+consulting `nodes.json`.
+
 ## License
 
 CC-BY-4.0. Please cite Byun et al. (2024) and Chan et al. (2024) when using

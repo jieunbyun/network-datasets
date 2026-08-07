@@ -16,6 +16,7 @@
         "y": 6.831,
         "type": "source",
         "capacity": 140.0,
+        "demand": 21.7,
         "unit": "MW"
     },
     "bus2_int": {
@@ -28,6 +29,7 @@
         "y": 2.2311,
         "type": "source",
         "capacity": 100.0,
+        "demand": 94.2,
         "unit": "MW"
     },
     "bus3_int": {
@@ -38,8 +40,8 @@
     "bus4": {
         "x": 2.2939,
         "y": 3.6167,
-        "type": "output",
-        "capacity": 47.8,
+        "type": "output only",
+        "demand": 47.8,
         "unit": "MW"
     },
     "bus4_int": {
@@ -50,8 +52,8 @@
     "bus5": {
         "x": 3.033,
         "y": 4.561,
-        "type": "output",
-        "capacity": 7.6,
+        "type": "output only",
+        "demand": 7.6,
         "unit": "MW"
     },
     "bus5_int": {
@@ -64,6 +66,7 @@
         "y": 0.818,
         "type": "source",
         "capacity": 100.0,
+        "demand": 11.2,
         "unit": "MW"
     },
     "bus6_int": {
@@ -96,8 +99,8 @@
     "bus9": {
         "x": 4.6608,
         "y": 0.4895,
-        "type": "output",
-        "capacity": 29.5,
+        "type": "output only",
+        "demand": 29.5,
         "unit": "MW"
     },
     "bus9_int": {
@@ -108,8 +111,8 @@
     "bus10": {
         "x": 3.9181,
         "y": 0.4355,
-        "type": "output",
-        "capacity": 9.0,
+        "type": "output only",
+        "demand": 9.0,
         "unit": "MW"
     },
     "bus10_int": {
@@ -120,8 +123,8 @@
     "bus11": {
         "x": 4.8834,
         "y": 0.5739,
-        "type": "output",
-        "capacity": 3.5,
+        "type": "output only",
+        "demand": 3.5,
         "unit": "MW"
     },
     "bus11_int": {
@@ -132,8 +135,8 @@
     "bus12": {
         "x": 4.4502,
         "y": 0.4177,
-        "type": "output",
-        "capacity": 6.1,
+        "type": "output only",
+        "demand": 6.1,
         "unit": "MW"
     },
     "bus12_int": {
@@ -144,8 +147,8 @@
     "bus13": {
         "x": 3.7518,
         "y": 0.4075,
-        "type": "output",
-        "capacity": 13.5,
+        "type": "output only",
+        "demand": 13.5,
         "unit": "MW"
     },
     "bus13_int": {
@@ -156,8 +159,8 @@
     "bus14": {
         "x": 1.3887,
         "y": 0.0,
-        "type": "output",
-        "capacity": 14.9,
+        "type": "output only",
+        "demand": 14.9,
         "unit": "MW"
     },
     "bus14_int": {

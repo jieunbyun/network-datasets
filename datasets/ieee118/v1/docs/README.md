@@ -22,6 +22,34 @@ authoritative source for line admittances, generator limits, and bus demand.
 - **Ordinary buses (64)** — binary, p(fail) = 0.01.
 - **Branches (186)** — `br1`..`br186`: binary, p(fail) = 0.01.
 
+## Node attributes
+
+Each outer `busX` node in `nodes.json` carries its role and its electrical
+quantities, read from `data/ieee118.m`. The inner `busX_int` nodes carry only
+`x`, `y` and `type: transmission`.
+
+| `type` | generation | demand | count |
+| --- | --- | --- | --- |
+| `source` | yes (`capacity`) | often also yes (`demand`) | 54 |
+| `output only` | no | yes (`demand`) | 54 |
+| `transmission` | no | no | 10 |
+
+- **`capacity`** — generation capacity in MW, summed over the bus's rows in
+  `mpc.gen` (`PMAX`). Present on `source` nodes only.
+- **`demand`** — nominal real power demand in MW, from the `PD` column of
+  `mpc.bus`. Present on any bus with `PD != 0` (99 of the 118 buses).
+
+`source` and `demand` are independent: 45 of the 54 generator buses also carry
+load, totalling 2809.0 MW — 66% of the system's 4242.0 MW. `output only` is
+named to make that asymmetry explicit; it means *load and no generation*, not
+*the only buses with load*.
+
+```json
+"bus1":  { "x": 8.2258, "y": 1.1481, "type": "source",      "capacity": 100.0, "demand": 51.0, "unit": "MW" },
+"bus2":  { "x": 8.9209, "y": 1.3787, "type": "output only", "demand": 20.0, "unit": "MW" },
+"bus5":  { "x": 9.5203, "y": 2.9532, "type": "transmission" }
+```
+
 ## System function
 
 Blackout threshold is **13.8%** of total demand (Scenario 1 in Chan et al.).

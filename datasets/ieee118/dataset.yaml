@@ -1,5 +1,5 @@
 name: ieee118
-version: 1.0.0
+version: 1.1.0
 title: IEEE 118-bus DC optimal power flow (DC-OPF) blackout model
 license: CC-BY-4.0
 description: >
@@ -16,8 +16,7 @@ description: >
 
 contacts:
   - name: Ji-Eun Byun
-    affiliation: University of Glasgow
-    email: jieun.byun@glasgow.ac.uk
+    email: j.byun@imperial.ac.uk
   - name: Hyeuk Ryu
     email: dynaryu@gmail.com
 
@@ -28,6 +27,23 @@ files:
   edges: data/edges.json
   probs: data/probs.json
   matpower_case: data/ieee118.m
+
+# Attributes carried by the outer `busX` nodes of data/nodes.json. The inner
+# `busX_int` nodes carry only x, y and type: transmission.
+node_attributes:
+  x, y: layout coordinates; no electrical meaning.
+  type: >
+    source        - has generation (mpc.gen); may ALSO carry demand.
+    output only   - has demand and no generation.
+    transmission  - neither generation nor demand.
+  capacity: >
+    Generation capacity in MW, summed over the bus's rows in mpc.gen (PMAX).
+    Present on `source` nodes only.
+  demand: >
+    Nominal real power demand in MW, from the PD column of mpc.bus. Present on
+    any bus with PD != 0 -- including `source` buses, 45 of the 54 of which also
+    carry load (2809.0 MW, 66% of the 4242.0 MW system total).
+  unit: Unit for capacity and demand; always MW.
 
 scripts:
   - scripts/sfun_dcopt.py
@@ -40,5 +56,4 @@ docs:
   - docs/CHANGELOG.md
 
 citation: |
-  Byun, J.-E., Ryu, H., & Straub, D. (2024). Branch-and-bound algorithm for efficient
-  reliability analysis of general coherent systems. arXiv:2410.22363.
+  Chan, J., Paredes, R., Papaioannou, I., Duenas-Osorio, L., & Straub, D. (2025). Adaptive Monte Carlo methods for estimating rare events in power grids. ASCE-ASME Journal of Risk and Uncertainty in Engineering Systems, Part A: Civil Engineering, 11(1), 04024082.
