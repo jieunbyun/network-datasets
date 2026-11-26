@@ -9,6 +9,8 @@ import math
 import networkx as nx
 
 from ndtools.graphs import draw_graph_from_data
+from ndtools.spatial_network.generate import SEED as SPATIAL_SEED, generate_graph, spatial_density
+from ndtools.spatial_network.select_od import select_pairs
 
 try:
     import jsonschema  # used in validate()
@@ -246,13 +248,15 @@ def _dataset_root(base: Path, name: str, version: DatasetVersion) -> Path:
     return base / name / version
 
 def save_dataset(base_dir: Path, name: str, version: DatasetVersion, nodes: List[Dict], edges: List[Dict],
-                 probs: Dict, description: str="", generator: str="", generator_params: Dict|None=None) -> Path:
+                 probs: Dict, description: str="", generator: str="", generator_params: Dict|None=None,
+                 *, od_pairs: Optional[Dict] = None) -> Path:
     """
     Writes:
       <base_dir>/<name>/<version>/
         data/nodes.json
         data/edges.json
         data/probs.json
+        data/od_pairs.json (when provided)
         README.md
         metadata.json
     """
@@ -263,6 +267,10 @@ def save_dataset(base_dir: Path, name: str, version: DatasetVersion, nodes: List
     (data_dir / "nodes.json").write_text(json.dumps(nodes, indent=2))
     (data_dir / "edges.json").write_text(json.dumps(edges, indent=2))
     (data_dir / "probs.json").write_text(json.dumps(probs, indent=2))
+    od_file_entry = ""
+    if od_pairs is not None:
+        (data_dir / "od_pairs.json").write_text(json.dumps(od_pairs, indent=2) + "\n", encoding="utf-8")
+        od_file_entry = "\n- `data/od_pairs.json`"
 
     # README
     readme = f"""# {name}
@@ -275,7 +283,7 @@ Generated dataset ({version}).
 ## Files
 - `data/nodes.json`
 - `data/edges.json`
-- `data/probs.json`
+- `data/probs.json`{od_file_entry}
 
 ## Generator
 - type: `{generator}`
@@ -357,6 +365,8 @@ def generate_and_save(
     """
     params = config.generator_params or {}
     g = config.generator.lower()
+    seed = config.seed
+    od_pairs = None
 
     if g in ("grid", "lattice"):
         gen_params = {k: v for k, v in params.items() if k in ["rows", "cols"]}
@@ -386,11 +396,20 @@ def generate_and_save(
         gen_params = {k: v for k, v in params.items() if k in ["n_nodes", "radius"]}
         nodes, edges = generate_random_geometric(**gen_params, seed=config.seed)
 
+    elif g == "spatial_network":
+        node_count = params.get("n_nodes")
+        if not isinstance(node_count, int) or node_count < 3:
+            raise ValueError("spatial_network requires n_nodes >= 3.")
+        if seed is None:
+            seed = random.SystemRandom().randrange(2**32)
+        nodes, edges = generate_graph(node_count, spatial_density(node_count, seed), seed)
+        od_pairs = select_pairs(nodes, edges)
+
     else:
         raise ValueError(f"Unknown generator: {config.generator}")
 
     if g not in ("grid","lattice"):
-        params["seed"] = config.seed  # include seed in params for metadata
+        params["seed"] = seed  # include seed in params for metadata
 
     probs = assign_edge_probs(edges, p_fail=float(params.get("p_fail", 0.1)))
 
@@ -400,6 +419,7 @@ def generate_and_save(
         description=config.description,
         generator=config.generator,
         generator_params=params,
+        od_pairs=od_pairs,
     )
 
     if isinstance(schema_dir, Path):
@@ -445,6 +465,7 @@ def run(argv: Optional[list[str]] = None):
             "barabasi_albert", "ba",
             "configuration", "config",
             "random_geometric", "rg",
+            "spatial_network",
         ],
         required=True
     )
@@ -454,7 +475,7 @@ def run(argv: Optional[list[str]] = None):
     parser.add_argument("--n_nodes", type=int)
     parser.add_argument("--p", type=float)
     parser.add_argument("--p_fail", type=float, default=0.1)
-    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--seed", type=int, help="Random seed (default: 7 for spatial_network, 42 otherwise)")
     parser.add_argument("--description", default="")
     parser.add_argument("--outbase", default="generated")
     parser.add_argument("--draw_graph", type=bool, default=True)
@@ -484,13 +505,20 @@ def run(argv: Optional[list[str]] = None):
         params = {"n_nodes": args.n_nodes, "avg_deg": args.avg_deg, "p_fail": args.p_fail}
     elif g in ("random_geometric", "rg"):
         params = {"n_nodes": args.n_nodes, "radius": args.radius, "p_fail": args.p_fail}
+    elif g == "spatial_network":
+        if args.n_nodes is None or args.n_nodes < 3:
+            parser.error("spatial_network requires --n_nodes >= 3")
+        params = {"n_nodes": args.n_nodes, "p_fail": args.p_fail}
     else:
         raise SystemExit(f"Unknown --type {args.type}")
 
+    seed = args.seed
+    if seed is None:
+        seed = SPATIAL_SEED if g == "spatial_network" else 42
     cfg = GenConfig(
         name=args.name,
         version="v1",
-        seed=args.seed,
+        seed=seed,
         description=args.description,
         generator=args.type,
         generator_params=params,
@@ -501,7 +529,7 @@ def run(argv: Optional[list[str]] = None):
     out_base = (script_root / args.outbase)
     schema_dir = repo_root / "schema"
 
-    ds_root = generate_and_save(out_base, schema_dir, cfg, draw_graph=args.draw_graph)
+    ds_root = generate_and_save(out_base, cfg, draw_graph=args.draw_graph, schema_dir=schema_dir)
     print(f"Wrote dataset to: {ds_root}")
 
 

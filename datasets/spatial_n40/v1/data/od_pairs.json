@@ -1,0 +1,88 @@
+{
+  "node_count": 40,
+  "coordinate_mode": "relative",
+  "domain": {
+    "x": [
+      0.0,
+      1.4142135623730951
+    ],
+    "y": [
+      0.0,
+      1.4142135623730951
+    ]
+  },
+  "pairs": {
+    "west_east": {
+      "origin": "n36",
+      "destination": "n39",
+      "origin_target_xy": [
+        0.21213203435596426,
+        0.7071067811865476
+      ],
+      "destination_target_xy": [
+        1.2020815280171309,
+        0.7071067811865476
+      ],
+      "origin_xy": [
+        0.18375985154313698,
+        0.45591452108814334
+      ],
+      "destination_xy": [
+        1.1243254696143856,
+        0.7720596964881102
+      ],
+      "origin_snap_distance": 0.2527895019396748,
+      "destination_snap_distance": 0.1013157728317911,
+      "straight_line_distance": 0.992275896022082,
+      "shortest_path_length": 1.6079046900440896
+    },
+    "south_north": {
+      "origin": "n17",
+      "destination": "n14",
+      "origin_target_xy": [
+        0.7071067811865476,
+        0.21213203435596426
+      ],
+      "destination_target_xy": [
+        0.7071067811865476,
+        1.2020815280171309
+      ],
+      "origin_xy": [
+        0.8093976784853999,
+        0.18786541161135828
+      ],
+      "destination_xy": [
+        0.6672337762378007,
+        1.149376074742126
+      ],
+      "origin_snap_distance": 0.10512990368888094,
+      "destination_snap_distance": 0.06608873828850508,
+      "straight_line_distance": 0.9719636466537386,
+      "shortest_path_length": 1.628775907351611
+    },
+    "southwest_northeast": {
+      "origin": "n35",
+      "destination": "n15",
+      "origin_target_xy": [
+        0.21213203435596426,
+        0.21213203435596426
+      ],
+      "destination_target_xy": [
+        1.2020815280171309,
+        1.2020815280171309
+      ],
+      "origin_xy": [
+        0.16658577554570134,
+        0.20950836476912552
+      ],
+      "destination_xy": [
+        1.1399529691422265,
+        1.072033454918054
+      ],
+      "origin_snap_distance": 0.04562176381632296,
+      "destination_snap_distance": 0.14412653865494485,
+      "straight_line_distance": 1.3005357452628483,
+      "shortest_path_length": 1.869887861853802
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "spatial_n40",
+  "version": "v1",
+  "description": "",
+  "generator": {
+    "type": "spatial_network",
+    "params": {
+      "n_nodes": 40,
+      "p_fail": 0.1,
+      "seed": 7
+    }
+  }
+}

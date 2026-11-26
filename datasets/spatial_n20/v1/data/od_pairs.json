@@ -1,0 +1,88 @@
+{
+  "node_count": 20,
+  "coordinate_mode": "relative",
+  "domain": {
+    "x": [
+      0.0,
+      1.0
+    ],
+    "y": [
+      0.0,
+      1.0
+    ]
+  },
+  "pairs": {
+    "west_east": {
+      "origin": "n8",
+      "destination": "n0",
+      "origin_target_xy": [
+        0.15,
+        0.5
+      ],
+      "destination_target_xy": [
+        0.85,
+        0.5
+      ],
+      "origin_xy": [
+        0.1985517513759614,
+        0.5035454634669504
+      ],
+      "destination_xy": [
+        0.749848025594793,
+        0.37525215711522497
+      ],
+      "origin_snap_distance": 0.048681031961829345,
+      "destination_snap_distance": 0.1599763803868113,
+      "straight_line_distance": 0.5660271675655002,
+      "shortest_path_length": 0.6248741283662855
+    },
+    "south_north": {
+      "origin": "n4",
+      "destination": "n10",
+      "origin_target_xy": [
+        0.5,
+        0.15
+      ],
+      "destination_target_xy": [
+        0.5,
+        0.85
+      ],
+      "origin_xy": [
+        0.7855051473116063,
+        0.052588201149828
+      ],
+      "destination_xy": [
+        0.35411033749129084,
+        0.6286022776389317
+      ],
+      "origin_snap_distance": 0.3016657880778799,
+      "destination_snap_distance": 0.26514287675435244,
+      "straight_line_distance": 0.7196483156747476,
+      "shortest_path_length": 0.9124534086690236
+    },
+    "southwest_northeast": {
+      "origin": "n3",
+      "destination": "n2",
+      "origin_target_xy": [
+        0.15,
+        0.15
+      ],
+      "destination_target_xy": [
+        0.85,
+        0.85
+      ],
+      "origin_xy": [
+        0.17370483940622788,
+        0.15938154766762497
+      ],
+      "destination_xy": [
+        0.7552695616051444,
+        0.7627592496481115
+      ],
+      "origin_snap_distance": 0.025493780573209893,
+      "destination_snap_distance": 0.12878200371341514,
+      "straight_line_distance": 0.8380227785409866,
+      "shortest_path_length": 1.084900419162526
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "e0": {
+    "from": "n0",
+    "to": "n4",
+    "directed": false
+  },
+  "e1": {
+    "from": "n0",
+    "to": "n5",
+    "directed": false
+  },
+  "e2": {
+    "from": "n1",
+    "to": "n18",
+    "directed": false
+  },
+  "e3": {
+    "from": "n2",
+    "to": "n5",
+    "directed": false
+  },
+  "e4": {
+    "from": "n2",
+    "to": "n13",
+    "directed": false
+  },
+  "e5": {
+    "from": "n3",
+    "to": "n11",
+    "directed": false
+  },
+  "e6": {
+    "from": "n3",
+    "to": "n15",
+    "directed": false
+  },
+  "e7": {
+    "from": "n5",
+    "to": "n17",
+    "directed": false
+  },
+  "e8": {
+    "from": "n6",
+    "to": "n7",
+    "directed": false
+  },
+  "e9": {
+    "from": "n6",
+    "to": "n9",
+    "directed": false
+  },
+  "e10": {
+    "from": "n8",
+    "to": "n13",
+    "directed": false
+  },
+  "e11": {
+    "from": "n8",
+    "to": "n16",
+    "directed": false
+  },
+  "e12": {
+    "from": "n8",
+    "to": "n18",
+    "directed": false
+  },
+  "e13": {
+    "from": "n9",
+    "to": "n12",
+    "directed": false
+  },
+  "e14": {
+    "from": "n10",
+    "to": "n13",
+    "directed": false
+  },
+  "e15": {
+    "from": "n11",
+    "to": "n14",
+    "directed": false
+  },
+  "e16": {
+    "from": "n14",
+    "to": "n19",
+    "directed": false
+  },
+  "e17": {
+    "from": "n16",
+    "to": "n17",
+    "directed": false
+  },
+  "e18": {
+    "from": "n16",
+    "to": "n18",
+    "directed": false
+  },
+  "e19": {
+    "from": "n7",
+    "to": "n11",
+    "directed": false
+  },
+  "e20": {
+    "from": "n1",
+    "to": "n19",
+    "directed": false
+  },
+  "e21": {
+    "from": "n1",
+    "to": "n8",
+    "directed": false
+  },
+  "e22": {
+    "from": "n6",
+    "to": "n11",
+    "directed": false
+  },
+  "e23": {
+    "from": "n3",
+    "to": "n6",
+    "directed": false
+  },
+  "e24": {
+    "from": "n11",
+    "to": "n19",
+    "directed": false
+  },
+  "e25": {
+    "from": "n12",
+    "to": "n15",
+    "directed": false
+  },
+  "e26": {
+    "from": "n10",
+    "to": "n16",
+    "directed": false
+  },
+  "e27": {
+    "from": "n1",
+    "to": "n11",
+    "directed": false
+  },
+  "e28": {
+    "from": "n0",
+    "to": "n2",
+    "directed": false
+  },
+  "e29": {
+    "from": "n4",
+    "to": "n5",
+    "directed": false
+  }
+}
