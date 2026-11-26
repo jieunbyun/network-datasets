@@ -26,6 +26,7 @@
   "tests/test_network_generator.py::test_grid1",
   "tests/test_network_generator.py::test_random_geometric1",
   "tests/test_network_generator.py::test_watts_strogatz1",
+  "tests/test_spatial_network.py::test_spatial_network",
   "tests/test_staged_max_flow.py::test_add_a_component1",
   "tests/test_staged_max_flow.py::test_add_a_component2",
   "tests/test_staged_max_flow.py::test_create_lp1",

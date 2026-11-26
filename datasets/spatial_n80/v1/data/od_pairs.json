@@ -1,0 +1,88 @@
+{
+  "node_count": 80,
+  "coordinate_mode": "relative",
+  "domain": {
+    "x": [
+      0.0,
+      2.0
+    ],
+    "y": [
+      0.0,
+      2.0
+    ]
+  },
+  "pairs": {
+    "west_east": {
+      "origin": "n17",
+      "destination": "n25",
+      "origin_target_xy": [
+        0.3,
+        1.0
+      ],
+      "destination_target_xy": [
+        1.7,
+        1.0
+      ],
+      "origin_xy": [
+        0.5453413987402588,
+        1.0891665791647833
+      ],
+      "destination_xy": [
+        1.7491001058668805,
+        1.0020207482913137
+      ],
+      "origin_snap_distance": 0.26104229690947833,
+      "destination_snap_distance": 0.049141670909684396,
+      "straight_line_distance": 1.2069090358522399,
+      "shortest_path_length": 2.3844076202899642
+    },
+    "south_north": {
+      "origin": "n23",
+      "destination": "n41",
+      "origin_target_xy": [
+        1.0,
+        0.3
+      ],
+      "destination_target_xy": [
+        1.0,
+        1.7
+      ],
+      "origin_xy": [
+        1.0627302056723997,
+        0.29414107979279747
+      ],
+      "destination_xy": [
+        0.9535471108012615,
+        1.5366756944100457
+      ],
+      "origin_snap_distance": 0.06300321935977508,
+      "destination_snap_distance": 0.16980194260181783,
+      "straight_line_distance": 1.2473224189148824,
+      "shortest_path_length": 1.3269532243671391
+    },
+    "southwest_northeast": {
+      "origin": "n27",
+      "destination": "n53",
+      "origin_target_xy": [
+        0.3,
+        0.3
+      ],
+      "destination_target_xy": [
+        1.7,
+        1.7
+      ],
+      "origin_xy": [
+        0.25036574689764785,
+        0.3395178646738387
+      ],
+      "destination_xy": [
+        1.6709816432074949,
+        1.865158568088366
+      ],
+      "origin_snap_distance": 0.06344462711221639,
+      "destination_snap_distance": 0.16768845411636596,
+      "straight_line_distance": 2.0846412355039425,
+      "shortest_path_length": 2.9844719000808286
+    }
+  }
+}

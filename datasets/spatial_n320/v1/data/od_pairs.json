@@ -1,0 +1,88 @@
+{
+  "node_count": 320,
+  "coordinate_mode": "relative",
+  "domain": {
+    "x": [
+      0.0,
+      4.0
+    ],
+    "y": [
+      0.0,
+      4.0
+    ]
+  },
+  "pairs": {
+    "west_east": {
+      "origin": "n292",
+      "destination": "n186",
+      "origin_target_xy": [
+        0.6,
+        2.0
+      ],
+      "destination_target_xy": [
+        3.4,
+        2.0
+      ],
+      "origin_xy": [
+        0.5424414892410359,
+        1.7768152479202206
+      ],
+      "destination_xy": [
+        3.3059604112338974,
+        1.876656190311545
+      ],
+      "origin_snap_distance": 0.23048734395125123,
+      "destination_snap_distance": 0.1551036416199164,
+      "straight_line_distance": 2.765321870233224,
+      "shortest_path_length": 6.289424565229606
+    },
+    "south_north": {
+      "origin": "n285",
+      "destination": "n260",
+      "origin_target_xy": [
+        2.0,
+        0.6
+      ],
+      "destination_target_xy": [
+        2.0,
+        3.4
+      ],
+      "origin_xy": [
+        1.9536729533175639,
+        0.5854354693432088
+      ],
+      "destination_xy": [
+        2.005230849302118,
+        3.5774869473526953
+      ],
+      "origin_snap_distance": 0.04856254531600695,
+      "destination_snap_distance": 0.17756401173942862,
+      "straight_line_distance": 2.992495658091605,
+      "shortest_path_length": 4.05461379630694
+    },
+    "southwest_northeast": {
+      "origin": "n236",
+      "destination": "n146",
+      "origin_target_xy": [
+        0.6,
+        0.6
+      ],
+      "destination_target_xy": [
+        3.4,
+        3.4
+      ],
+      "origin_xy": [
+        0.5322305416143075,
+        0.6320997507338602
+      ],
+      "destination_xy": [
+        3.603137477001459,
+        3.613370220900502
+      ],
+      "origin_snap_distance": 0.07498728883661591,
+      "destination_snap_distance": 0.2946042866790085,
+      "straight_line_distance": 4.2800050259429065,
+      "shortest_path_length": 6.488082580179121
+    }
+  }
+}
