@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+- Added:
+  - `data/nodes_geo.json` (approximate WGS84 positions for all 22 nodes)
+  - `data/geo_control_points.json` (Wikidata coordinates of the 14 labelled cities)
+  - `scripts/georeference_nodes.py` (reproduces the fit)
+- Documentation:
+  - `PROVENANCE.md`: georeferencing method and accuracy; full citation for Bai et al. (2021)
+
 ## v1.0.0 (2026-09-25)
 - Initial release.
 - Added:

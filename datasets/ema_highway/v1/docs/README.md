@@ -18,6 +18,12 @@ and path-based analyses on a mid-sized, schematic road network.
   "e0001": { "from": "n1", "to": "n2", "directed": false }
   ```
 
+- `data/nodes_geo.json`
+  Approximate WGS84 `lat`/`lon` for every node, plus its town or zone (`zone`) in
+  the source benchmark. Fitted to town centres with a held-out error of about 7 km;
+  see PROVENANCE.md. Rebuilt by `scripts/georeference_nodes.py` from
+  `data/geo_control_points.json`.
+
 - `data/probs_bin.json`  
   The exact semantics depend on your analysis. Example minimal shape (per edge):
   ```json
@@ -80,4 +86,6 @@ probs = json.loads((root / "probs.json").read_text("utf-8"))  # if used
   post-editing in Inkscape).
 
 ## Notes
-- Coordinates in `nodes.json` are planar coordinates in kilometres (not geodetic).
+- Coordinates in `nodes.json` are planar and not geodetic. They were described as
+  kilometres, but the georeferencing fit gives about 1.81 real km per unit (see
+  PROVENANCE.md).

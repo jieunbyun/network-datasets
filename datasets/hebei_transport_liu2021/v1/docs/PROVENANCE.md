@@ -9,8 +9,11 @@ This dataset is the Hebei transportation multistate network used as the third
   decomposition method. *Reliability Engineering & System Safety*, 210, 107500.
   https://doi.org/10.1016/j.ress.2021.107500
 - The network is originally attributed by that paper to its reference [37]:
-  Bai, G., Xu, B., Chen, X., Zhang, Y., & Tao, J. (2020). *IEEE Transactions on
-  Reliability*. https://doi.org/10.1109/TR.2020.3004971
+  Bai, G., Xu, B., Chen, X., Zhang, Y., & Tao, J. (2021). Searching for d-MPs for
+  all level d in multistate two-terminal networks without duplicates. *IEEE
+  Transactions on Reliability*, 70(1), 319–330 (early access 2020).
+  https://doi.org/10.1109/TR.2020.3004971 — the network is its Example 3, drawn
+  on a map of Hebei in Fig. 12.
 
 ## Processing notes
 - The paper distributes no machine-readable data. Nodes and arcs were digitised
@@ -34,3 +37,30 @@ This dataset is the Hebei transportation multistate network used as the third
 - The graph is a DAG, every node lies on an s–t path, and the maximum flow with
   all arcs at capacity 2 is 6 — consistent with the demands `d = 3` and `d = 4`
   studied in the paper.
+
+## Georeferencing (`data/nodes_geo.json`)
+Approximate WGS84 positions, added so the network can be used with geodetic
+hazard inputs such as USGS ShakeMap grids. `x`/`y` in `nodes.json` are unchanged.
+
+- Both source figures (Liu et al. 2021 Fig. 7; Bai et al. 2021 Fig. 12) draw the
+  nodes on a map of Hebei's prefecture boundaries, without a graticule, scale
+  bar or stated projection.
+- **Control points:** the 14 labelled cities, each with the coordinate location
+  (P625) of its Wikidata item, retrieved 2026-10-12 (`data/geo_control_points.json`).
+  These are city-centre points, not specific facilities.
+- **Fit:** a least-squares similarity transform (uniform scale, rotation,
+  translation) from figure units to a local equirectangular km frame centred on
+  38.8°N 116.5°E (`scripts/georeference_nodes.py`). Scale 7.47 km per figure
+  unit, rotation −2.2°. An affine fit was tried and predicted held-out cities
+  slightly worse (leave-one-out RMS 23.8 km vs 22.1 km), so the extra freedom
+  was not used.
+- **Accuracy:** fit RMS 19.0 km; leave-one-out RMS **22.1 km**, maximum 38.9 km
+  (XT). No single city dominates, including the inferred BZ and HH, so the error
+  is the drawing's placement scatter rather than a misidentified city.
+- **Labelled nodes** take the city's own coordinate; **the 8 junction nodes**
+  (6, 9, 13, 16, 17, 19, 20, 21) take the fitted position and should be treated
+  as uncertain by about ±22 km. All 8 fall inside Hebei, in counties consistent
+  with their arcs (e.g. n13 in Hejian, between Baoding and Hengshui). Every node
+  also carries `fitted_lat`/`fitted_lon` for comparison.
+- **Not provided:** road geometry and bridge locations. Arcs are straight lines in
+  both figures, so any position on an arc (e.g. its midpoint) is an assumption.

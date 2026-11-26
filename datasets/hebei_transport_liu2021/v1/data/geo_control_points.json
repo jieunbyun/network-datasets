@@ -1,0 +1,17 @@
+{
+  "_about": "Geodetic coordinates (WGS84) of the 14 labelled cities, used as control points to georeference the figure coordinates in nodes.json. Each is the coordinate location (P625) of the Wikidata item named, retrieved 2026-10-12. Bazhou and Huanghua are the dataset's inferred expansions of BZ and HH.",
+  "n1":  {"label": "CD",  "city": "Chengde",      "wikidata": "Q58675",   "lat": 40.973889, "lon": 117.932222},
+  "n2":  {"label": "ZJK", "city": "Zhangjiakou",  "wikidata": "Q58650",   "lat": 40.81078,  "lon": 114.88114},
+  "n3":  {"label": "BJ",  "city": "Beijing",      "wikidata": "Q956",     "lat": 39.90403,  "lon": 116.407526},
+  "n4":  {"label": "QHD", "city": "Qinhuangdao",  "wikidata": "Q58560",   "lat": 39.93978,  "lon": 119.58812},
+  "n5":  {"label": "TS",  "city": "Tangshan",     "wikidata": "Q58422",   "lat": 39.629444, "lon": 118.173889},
+  "n7":  {"label": "TJ",  "city": "Tianjin",      "wikidata": "Q11736",   "lat": 39.146667, "lon": 117.205556},
+  "n8":  {"label": "BZ",  "city": "Bazhou",       "wikidata": "Q812672",  "lat": 39.12346,  "lon": 116.38596},
+  "n10": {"label": "BD",  "city": "Baoding",      "wikidata": "Q58584",   "lat": 38.86712,  "lon": 115.48452},
+  "n11": {"label": "HH",  "city": "Huanghua",     "wikidata": "Q1207090", "lat": 38.37099,  "lon": 117.3329},
+  "n12": {"label": "CZ",  "city": "Cangzhou",     "wikidata": "Q58695",   "lat": 38.30369,  "lon": 116.84519},
+  "n14": {"label": "HS",  "city": "Hengshui",     "wikidata": "Q58724",   "lat": 37.73484,  "lon": 115.68599},
+  "n15": {"label": "SJZ", "city": "Shijiazhuang", "wikidata": "Q58401",   "lat": 38.0425,   "lon": 114.51},
+  "n18": {"label": "XT",  "city": "Xingtai",      "wikidata": "Q58576",   "lat": 37.06594,  "lon": 114.47531},
+  "n22": {"label": "HD",  "city": "Handan",       "wikidata": "Q58570",   "lat": 36.61161,  "lon": 114.48937}
+}

@@ -1,0 +1,619 @@
+{
+  "_about": "Approximate WGS84 positions for nodes.json, from scripts/georeference_nodes.py: every node's x/y mapped through a similarity transform fitted to town centres (leave-one-town-out RMS 7 km). 'zone' is the node's town or zone in the source benchmark. x/y are in units of about 1.81 real km, not kilometres.",
+  "n1": {
+    "zone": "Seabrook (NH)",
+    "lat": 42.8782,
+    "lon": -70.8724,
+    "method": "fitted_from_figure",
+    "control_town": "Seabrook",
+    "fit_residual_km": 0.2,
+    "held_out_error_km": 0.2
+  },
+  "n2": {
+    "zone": "NH",
+    "lat": 42.8137,
+    "lon": -71.1933,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n3": {
+    "zone": "Haverhill",
+    "lat": 42.7999,
+    "lon": -71.1056,
+    "method": "fitted_from_figure",
+    "control_town": "Haverhill",
+    "fit_residual_km": 3.4,
+    "held_out_error_km": 3.6
+  },
+  "n4": {
+    "zone": "NH",
+    "lat": 42.7591,
+    "lon": -71.2072,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n5": {
+    "zone": "NH",
+    "lat": 42.72,
+    "lon": -71.4449,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n6": {
+    "zone": "Lawrence",
+    "lat": 42.7044,
+    "lon": -71.1588,
+    "method": "fitted_from_figure",
+    "control_town": "Lawrence",
+    "fit_residual_km": 0.5,
+    "held_out_error_km": 0.5
+  },
+  "n7": {
+    "zone": "Georgetown",
+    "lat": 42.7042,
+    "lon": -70.9766,
+    "method": "fitted_from_figure",
+    "control_town": "Georgetown",
+    "fit_residual_km": 2.6,
+    "held_out_error_km": 3.2
+  },
+  "n8": {
+    "zone": "Lawrence",
+    "lat": 42.6823,
+    "lon": -71.2027,
+    "method": "fitted_from_figure",
+    "control_town": "Lawrence",
+    "fit_residual_km": 4.3,
+    "held_out_error_km": 4.4
+  },
+  "n9": {
+    "zone": "Georgetown",
+    "lat": 42.653,
+    "lon": -70.9328,
+    "method": "fitted_from_figure",
+    "control_town": "Georgetown",
+    "fit_residual_km": 9.3,
+    "held_out_error_km": 9.9
+  },
+  "n10": {
+    "zone": "Lowell",
+    "lat": 42.6209,
+    "lon": -71.3458,
+    "method": "fitted_from_figure",
+    "control_town": "Lowell",
+    "fit_residual_km": 3.8,
+    "held_out_error_km": 4.0
+  },
+  "n11": {
+    "zone": "Lowell",
+    "lat": 42.6311,
+    "lon": -71.3066,
+    "method": "fitted_from_figure",
+    "control_town": "Lowell",
+    "fit_residual_km": 1.2,
+    "held_out_error_km": 1.3
+  },
+  "n12": {
+    "zone": "Salem",
+    "lat": 42.5847,
+    "lon": -70.8798,
+    "method": "fitted_from_figure",
+    "control_town": "Salem",
+    "fit_residual_km": 7.2,
+    "held_out_error_km": 7.5
+  },
+  "n13": {
+    "zone": "Peabody",
+    "lat": 42.5763,
+    "lon": -70.9814,
+    "method": "fitted_from_figure",
+    "control_town": "Peabody",
+    "fit_residual_km": 7.2,
+    "held_out_error_km": 7.6
+  },
+  "n14": {
+    "zone": "Peabody",
+    "lat": 42.537,
+    "lon": -70.9976,
+    "method": "fitted_from_figure",
+    "control_town": "Peabody",
+    "fit_residual_km": 5.9,
+    "held_out_error_km": 6.3
+  },
+  "n15": {
+    "zone": "Salem",
+    "lat": 42.5079,
+    "lon": -70.8592,
+    "method": "fitted_from_figure",
+    "control_town": "Salem",
+    "fit_residual_km": 3.4,
+    "held_out_error_km": 3.5
+  },
+  "n16": {
+    "zone": "Burlington",
+    "lat": 42.5184,
+    "lon": -71.1291,
+    "method": "fitted_from_figure",
+    "control_town": "Burlington",
+    "fit_residual_km": 5.7,
+    "held_out_error_km": 6.0
+  },
+  "n17": {
+    "zone": "Burlington",
+    "lat": 42.5183,
+    "lon": -71.1014,
+    "method": "fitted_from_figure",
+    "control_town": "Burlington",
+    "fit_residual_km": 7.9,
+    "held_out_error_km": 8.2
+  },
+  "n18": {
+    "zone": "Burlington",
+    "lat": 42.4963,
+    "lon": -71.2284,
+    "method": "fitted_from_figure",
+    "control_town": "Burlington",
+    "fit_residual_km": 2.9,
+    "held_out_error_km": 2.5
+  },
+  "n19": {
+    "zone": "Burlington",
+    "lat": 42.5014,
+    "lon": -71.1938,
+    "method": "fitted_from_figure",
+    "control_town": "Burlington",
+    "fit_residual_km": 0.4,
+    "held_out_error_km": 0.6
+  },
+  "n20": {
+    "zone": "Littleton",
+    "lat": 42.5375,
+    "lon": -71.519,
+    "method": "fitted_from_figure",
+    "control_town": "Littleton",
+    "fit_residual_km": 0.6,
+    "held_out_error_km": 0.6
+  },
+  "n21": {
+    "zone": "Lexington",
+    "lat": 42.4417,
+    "lon": -71.2584,
+    "method": "fitted_from_figure",
+    "control_town": "Lexington",
+    "fit_residual_km": 2.9,
+    "held_out_error_km": 2.9
+  },
+  "n22": {
+    "zone": "Boston",
+    "lat": 42.3989,
+    "lon": -71.0809,
+    "method": "fitted_from_figure",
+    "control_town": "Boston",
+    "fit_residual_km": 4.8,
+    "held_out_error_km": 5.0
+  },
+  "n23": {
+    "zone": "Waltham",
+    "lat": 42.3837,
+    "lon": -71.277,
+    "method": "fitted_from_figure",
+    "control_town": "Waltham",
+    "fit_residual_km": 3.5,
+    "held_out_error_km": 3.7
+  },
+  "n24": {
+    "zone": "Waltham",
+    "lat": 42.3581,
+    "lon": -71.2724,
+    "method": "fitted_from_figure",
+    "control_town": "Waltham",
+    "fit_residual_km": 3.6,
+    "held_out_error_km": 4.1
+  },
+  "n25": {
+    "zone": "Waltham",
+    "lat": 42.3649,
+    "lon": -71.2286,
+    "method": "fitted_from_figure",
+    "control_town": "Waltham",
+    "fit_residual_km": 1.4,
+    "held_out_error_km": 1.7
+  },
+  "n26": {
+    "zone": "Waltham",
+    "lat": 42.3444,
+    "lon": -71.2494,
+    "method": "fitted_from_figure",
+    "control_town": "Waltham",
+    "fit_residual_km": 3.7,
+    "held_out_error_km": 4.2
+  },
+  "n27": {
+    "zone": "Waltham",
+    "lat": 42.3188,
+    "lon": -71.284,
+    "method": "fitted_from_figure",
+    "control_town": "Waltham",
+    "fit_residual_km": 7.5,
+    "held_out_error_km": 8.0
+  },
+  "n28": {
+    "zone": "Waltham",
+    "lat": 42.3256,
+    "lon": -71.2286,
+    "method": "fitted_from_figure",
+    "control_town": "Waltham",
+    "fit_residual_km": 5.7,
+    "held_out_error_km": 6.1
+  },
+  "n29": {
+    "zone": "Quincy",
+    "lat": 42.2999,
+    "lon": -71.0418,
+    "method": "fitted_from_figure",
+    "control_town": "Quincy",
+    "fit_residual_km": 6.3,
+    "held_out_error_km": 6.4
+  },
+  "n30": {
+    "zone": "Marlborough/Framingham",
+    "lat": 42.3805,
+    "lon": -71.6023,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n31": {
+    "zone": "Marlborough/Framingham",
+    "lat": 42.3515,
+    "lon": -71.5793,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n32": {
+    "zone": "Marlborough/Framingham",
+    "lat": 42.3003,
+    "lon": -71.5886,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n33": {
+    "zone": "Marlborough/Framingham",
+    "lat": 42.3071,
+    "lon": -71.4802,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n34": {
+    "zone": "Marlborough/Framingham",
+    "lat": 42.2747,
+    "lon": -71.5794,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n35": {
+    "zone": "Milford",
+    "lat": 42.162,
+    "lon": -71.4988,
+    "method": "fitted_from_figure",
+    "control_town": "Milford",
+    "fit_residual_km": 2.6,
+    "held_out_error_km": 2.6
+  },
+  "n36": {
+    "zone": "Franklin",
+    "lat": 42.1005,
+    "lon": -71.4413,
+    "method": "fitted_from_figure",
+    "control_town": "Franklin",
+    "fit_residual_km": 4.1,
+    "held_out_error_km": 4.3
+  },
+  "n37": {
+    "zone": "Westwood/Quincy",
+    "lat": 42.2317,
+    "lon": -71.1803,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n38": {
+    "zone": "Westwood/Quincy",
+    "lat": 42.2129,
+    "lon": -71.1411,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n39": {
+    "zone": "Westwood/Quincy",
+    "lat": 42.2129,
+    "lon": -71.0904,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n40": {
+    "zone": "Westwood/Quincy",
+    "lat": 42.2128,
+    "lon": -71.0512,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n41": {
+    "zone": "Westwood/Quincy",
+    "lat": 42.2384,
+    "lon": -71.0211,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n42": {
+    "zone": "Dedham",
+    "lat": 42.1396,
+    "lon": -71.2197,
+    "method": "fitted_from_figure",
+    "control_town": "Dedham",
+    "fit_residual_km": 12.7,
+    "held_out_error_km": 13.0
+  },
+  "n43": {
+    "zone": "Foxborough",
+    "lat": 42.0816,
+    "lon": -71.2936,
+    "method": "fitted_from_figure",
+    "control_town": "Foxborough",
+    "fit_residual_km": 4.2,
+    "held_out_error_km": 4.3
+  },
+  "n44": {
+    "zone": "Foxborough",
+    "lat": 42.0424,
+    "lon": -71.3168,
+    "method": "fitted_from_figure",
+    "control_town": "Foxborough",
+    "fit_residual_km": 6.2,
+    "held_out_error_km": 6.7
+  },
+  "n45": {
+    "zone": "Foxborough",
+    "lat": 42.0492,
+    "lon": -71.2383,
+    "method": "fitted_from_figure",
+    "control_town": "Foxborough",
+    "fit_residual_km": 2.0,
+    "held_out_error_km": 2.4
+  },
+  "n46": {
+    "zone": "Foxborough",
+    "lat": 42.0304,
+    "lon": -71.2637,
+    "method": "fitted_from_figure",
+    "control_town": "Foxborough",
+    "fit_residual_km": 4.1,
+    "held_out_error_km": 4.7
+  },
+  "n47": {
+    "zone": "Foxborough",
+    "lat": 42.0099,
+    "lon": -71.2245,
+    "method": "fitted_from_figure",
+    "control_town": "Foxborough",
+    "fit_residual_km": 6.5,
+    "held_out_error_km": 6.9
+  },
+  "n48": {
+    "zone": "Taunton",
+    "lat": 41.9073,
+    "lon": -71.0378,
+    "method": "fitted_from_figure",
+    "control_town": "Taunton",
+    "fit_residual_km": 4.6,
+    "held_out_error_km": 4.7
+  },
+  "n49": {
+    "zone": "Plymouth",
+    "lat": 41.9907,
+    "lon": -70.7031,
+    "method": "fitted_from_figure",
+    "control_town": "Plymouth",
+    "fit_residual_km": 4.6,
+    "held_out_error_km": 4.1
+  },
+  "n50": {
+    "zone": "Cape Cod",
+    "lat": 41.7653,
+    "lon": -70.5512,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n51": {
+    "zone": "Cape Cod",
+    "lat": 41.7859,
+    "lon": -70.7265,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n52": {
+    "zone": "Dartmouth",
+    "lat": 41.6479,
+    "lon": -70.9482,
+    "method": "fitted_from_figure",
+    "control_town": "Dartmouth",
+    "fit_residual_km": 3.9,
+    "held_out_error_km": 4.3
+  },
+  "n53": {
+    "zone": "Fall River",
+    "lat": 41.677,
+    "lon": -71.1304,
+    "method": "fitted_from_figure",
+    "control_town": "Fall River",
+    "fit_residual_km": 3.3,
+    "held_out_error_km": 3.6
+  },
+  "n54": {
+    "zone": "RI",
+    "lat": 41.853,
+    "lon": -71.3678,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n55": {
+    "zone": "VT",
+    "lat": 42.683,
+    "lon": -72.0264,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n56": {
+    "zone": "VT",
+    "lat": 42.5892,
+    "lon": -72.1581,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n57": {
+    "zone": "Westminster",
+    "lat": 42.5703,
+    "lon": -71.9412,
+    "method": "fitted_from_figure",
+    "control_town": "Westminster",
+    "fit_residual_km": 3.8,
+    "held_out_error_km": 4.0
+  },
+  "n58": {
+    "zone": "Leominster",
+    "lat": 42.5342,
+    "lon": -71.7405,
+    "method": "fitted_from_figure",
+    "control_town": "Leominster",
+    "fit_residual_km": 1.9,
+    "held_out_error_km": 2.0
+  },
+  "n59": {
+    "zone": "Worcester",
+    "lat": 42.42,
+    "lon": -71.8145,
+    "method": "fitted_from_figure",
+    "control_town": "Worcester",
+    "fit_residual_km": 17.5,
+    "held_out_error_km": 19.0
+  },
+  "n60": {
+    "zone": "Worcester",
+    "lat": 42.2561,
+    "lon": -71.7848,
+    "method": "fitted_from_figure",
+    "control_town": "Worcester",
+    "fit_residual_km": 1.6,
+    "held_out_error_km": 1.3
+  },
+  "n61": {
+    "zone": "Amherst",
+    "lat": 42.2838,
+    "lon": -72.2439,
+    "method": "fitted_from_figure",
+    "control_town": "Amherst",
+    "fit_residual_km": 24.8,
+    "held_out_error_km": 27.4
+  },
+  "n62": {
+    "zone": "CT",
+    "lat": 42.1523,
+    "lon": -72.1657,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n63": {
+    "zone": "CT",
+    "lat": 42.1472,
+    "lon": -72.1057,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n64": {
+    "zone": "CT",
+    "lat": 42.1233,
+    "lon": -72.1749,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n65": {
+    "zone": "CT",
+    "lat": 42.1182,
+    "lon": -72.1196,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n66": {
+    "zone": "CT",
+    "lat": 42.038,
+    "lon": -72.1751,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n67": {
+    "zone": "Webster",
+    "lat": 42.0685,
+    "lon": -71.8935,
+    "method": "fitted_from_figure",
+    "control_town": "Webster",
+    "fit_residual_km": 2.3,
+    "held_out_error_km": 2.5
+  },
+  "n68": {
+    "zone": "RI",
+    "lat": 42.0241,
+    "lon": -71.8798,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n69": {
+    "zone": "Uxbridge",
+    "lat": 42.0717,
+    "lon": -71.6766,
+    "method": "fitted_from_figure",
+    "control_town": "Uxbridge",
+    "fit_residual_km": 3.9,
+    "held_out_error_km": 4.1
+  },
+  "n70": {
+    "zone": "RI",
+    "lat": 42.0239,
+    "lon": -71.6029,
+    "method": "fitted_from_figure",
+    "uncertainty_km": 7
+  },
+  "n71": {
+    "zone": "Milford",
+    "lat": 42.1364,
+    "lon": -71.5404,
+    "method": "fitted_from_figure",
+    "control_town": "Milford",
+    "fit_residual_km": 2.1,
+    "held_out_error_km": 2.1
+  },
+  "n72": {
+    "zone": "Worcester",
+    "lat": 42.3705,
+    "lon": -71.7962,
+    "method": "fitted_from_figure",
+    "control_town": "Worcester",
+    "fit_residual_km": 12.0,
+    "held_out_error_km": 13.4
+  },
+  "n73": {
+    "zone": "Plymouth",
+    "lat": 41.9206,
+    "lon": -70.5394,
+    "method": "fitted_from_figure",
+    "control_town": "Plymouth",
+    "fit_residual_km": 11.3,
+    "held_out_error_km": 12.1
+  },
+  "n74": {
+    "zone": "Taunton",
+    "lat": 41.9723,
+    "lon": -71.1346,
+    "method": "fitted_from_figure",
+    "control_town": "Taunton",
+    "fit_residual_km": 8.5,
+    "held_out_error_km": 8.8
+  }
+}

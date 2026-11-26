@@ -33,6 +33,11 @@ the reference studies `d = 3` and `d = 4`.
            "2": {"p": 0.25, "capacity": 2} }
   ```
 
+- `data/nodes_geo.json` — approximate WGS84 `lat`/`lon` for every node,
+  georeferenced from the figure (see PROVENANCE.md). Labelled nodes use the
+  city's coordinate; junction nodes are fitted, uncertain by about ±22 km.
+  Rebuilt by `scripts/georeference_nodes.py` from `data/geo_control_points.json`.
+
 - `data/probs_case1.json` — Case 1 of Table 4, `p = (0.05, 0.25, 0.70)`.
 - `data/probs_case3.json` — Case 3 of Table 4, `p = (0.70, 0.05, 0.25)`.
 

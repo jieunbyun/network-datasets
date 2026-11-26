@@ -1,0 +1,268 @@
+{
+  "_about": "Town-centre coordinates (WGS84) used as control points to georeference nodes.json. Node-to-town pairs are from the caption of Fig. 3 in EMA_intro.pdf of the TransportationNetworks benchmark (Eastern-Massachusetts); coordinates are OpenStreetMap Nominatim administrative-boundary points, retrieved 2026-10-12. Only zones naming a single town are used; zones given only as a state (NH, RI, VT, CT) or as two towns are left for the fit to place.",
+  "Seabrook": {
+    "state": "New Hampshire",
+    "nodes": [
+      "n1"
+    ],
+    "lat": 42.877308,
+    "lon": -70.870686,
+    "osm": "relation/71920"
+  },
+  "Haverhill": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n3"
+    ],
+    "lat": 42.777783,
+    "lon": -71.076772,
+    "osm": "relation/1931984"
+  },
+  "Lawrence": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n6",
+      "n8"
+    ],
+    "lat": 42.707035,
+    "lon": -71.163114,
+    "osm": "relation/1840197"
+  },
+  "Georgetown": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n7",
+      "n9"
+    ],
+    "lat": 42.724563,
+    "lon": -70.991968,
+    "osm": "relation/1936105"
+  },
+  "Lowell": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n10",
+      "n11"
+    ],
+    "lat": 42.641444,
+    "lon": -71.308533,
+    "osm": "relation/1805416"
+  },
+  "Salem": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n12",
+      "n15"
+    ],
+    "lat": 42.521444,
+    "lon": -70.895674,
+    "osm": "relation/2373035"
+  },
+  "Peabody": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n13",
+      "n14"
+    ],
+    "lat": 42.525897,
+    "lon": -70.927245,
+    "osm": "relation/2355161"
+  },
+  "Burlington": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n16",
+      "n17",
+      "n18",
+      "n19"
+    ],
+    "lat": 42.504817,
+    "lon": -71.195611,
+    "osm": "relation/1838337"
+  },
+  "Littleton": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n20"
+    ],
+    "lat": 42.537592,
+    "lon": -71.51201,
+    "osm": "relation/1834211"
+  },
+  "Lexington": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n21"
+    ],
+    "lat": 42.447317,
+    "lon": -71.2245,
+    "osm": "relation/1840167"
+  },
+  "Boston": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n22"
+    ],
+    "lat": 42.358834,
+    "lon": -71.05783,
+    "osm": "relation/2315704"
+  },
+  "Waltham": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n23",
+      "n24",
+      "n25",
+      "n26",
+      "n27",
+      "n28"
+    ],
+    "lat": 42.376238,
+    "lon": -71.235564,
+    "osm": "relation/1865772"
+  },
+  "Quincy": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n29"
+    ],
+    "lat": 42.250991,
+    "lon": -71.003737,
+    "osm": "relation/2387397"
+  },
+  "Milford": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n35",
+      "n71"
+    ],
+    "lat": 42.142891,
+    "lon": -71.516462,
+    "osm": "relation/1844177"
+  },
+  "Franklin": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n36"
+    ],
+    "lat": 42.08258,
+    "lon": -71.397117,
+    "osm": "relation/1949630"
+  },
+  "Dedham": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n42"
+    ],
+    "lat": 42.24819,
+    "lon": -71.173442,
+    "osm": "relation/2306370"
+  },
+  "Foxborough": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n43",
+      "n44",
+      "n45",
+      "n46",
+      "n47"
+    ],
+    "lat": 42.065377,
+    "lon": -71.247831,
+    "osm": "relation/1948160"
+  },
+  "Taunton": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n48",
+      "n74"
+    ],
+    "lat": 41.901926,
+    "lon": -71.093148,
+    "osm": "relation/2402321"
+  },
+  "Plymouth": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n49",
+      "n73"
+    ],
+    "lat": 41.95838,
+    "lon": -70.667385,
+    "osm": "relation/2387531"
+  },
+  "Dartmouth": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n52"
+    ],
+    "lat": 41.638689,
+    "lon": -70.993354,
+    "osm": "relation/2396244"
+  },
+  "Fall River": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n53"
+    ],
+    "lat": 41.701064,
+    "lon": -71.154637,
+    "osm": "relation/2396246"
+  },
+  "Westminster": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n57"
+    ],
+    "lat": 42.544902,
+    "lon": -71.91079,
+    "osm": "relation/1844207"
+  },
+  "Leominster": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n58"
+    ],
+    "lat": 42.526744,
+    "lon": -71.761489,
+    "osm": "relation/1844174"
+  },
+  "Worcester": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n59",
+      "n60",
+      "n72"
+    ],
+    "lat": 42.262562,
+    "lon": -71.801888,
+    "osm": "relation/1844209"
+  },
+  "Amherst": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n61"
+    ],
+    "lat": 42.373195,
+    "lon": -72.519876,
+    "osm": "relation/1839150"
+  },
+  "Webster": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n67"
+    ],
+    "lat": 42.050137,
+    "lon": -71.880331,
+    "osm": "relation/1844203"
+  },
+  "Uxbridge": {
+    "state": "Massachusetts",
+    "nodes": [
+      "n69"
+    ],
+    "lat": 42.076817,
+    "lon": -71.629848,
+    "osm": "relation/1844201"
+  }
+}
